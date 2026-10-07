@@ -743,13 +743,22 @@
 <script>
 (function(){
   var f = document.getElementById('hero-film');
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function load(){
     var v = document.createElement('video');
-    v.src = f.dataset.src; v.muted = true; v.loop = true; v.autoplay = true;
-    v.playsInline = true; v.setAttribute('aria-hidden','true');
-    v.setAttribute('autoplay',''); v.setAttribute('muted','');
+    v.src = f.dataset.src; v.muted = true; v.loop = true;
+    v.playsInline = true; v.setAttribute('muted','');
     v.poster = 'media/claude-mod-poster.jpg';
-    var go = function(){ v.play().catch(function(){}); };
+    if (still) { v.controls = true; f.querySelector('img').replaceWith(v); return; }
+    v.autoplay = true; v.setAttribute('autoplay','');
+    v.setAttribute('aria-hidden','true');
+    function go(){
+      v.play().catch(function(){});
+      // if the browser refused to autoplay, give the viewer a way in
+      setTimeout(function(){
+        if (v.paused) { v.controls = true; v.removeAttribute('aria-hidden'); }
+      }, 700);
+    }
     v.addEventListener('canplay', go, {once:true});
     f.querySelector('img').replaceWith(v);
     go();
