@@ -64,6 +64,26 @@ Keywords: AI consulting, AI strategy, growth consulting, automation consulting, 
 
 ## Projects
 
+### Waterfall Crew, a Claude Code mod
+Claude Code plugin, multi-agent orchestration. Demo video: https://aayanrehman.com/media/claude-mod.mp4
+
+- A mod for Claude Code (546 lines) that runs a crew of specialised subagents in parallel against real client accounts, with a live crew pane, per-agent task queues, a huddle channel, and a cost meter with spend alerts.
+- One dispatch fans out to four agents at once: Scout (leads and CRM), Quill (scripts and copy), Pixel (creative and pages), Ledger (numbers and ops).
+- Each agent owns a client: WaterfallGrowth CRM, Inspirate Consulting, McNamara Consulting, Evergreen Consulting.
+- Agents report back into a shared channel, tasks tick off in the HQ tab, and a ping summarises the run.
+
+Keywords: Claude Code mod, Claude Code plugin, multi-agent orchestration, agent crew, subagents, parallel agents, agentic workflow, agent observability, cost tracking, LLM ops.
+
+### Evergreen ad pipeline
+AI ad research and generation. Demo video: https://aayanrehman.com/media/evergreen.mp4
+
+- Aggregated 721 competitor ads in the college consulting niche with Apify, then scored every one for messaging, offer, proof, urgency and time running.
+- Shortlisted 40 references from those scores and generated 26 on-brand ads, 2 reels and 28 hooks.
+- Total compute cost for the run: $4.36.
+- Built for the founder of Evergreen Admissions Consulting, who had no time for marketing.
+
+Keywords: paid social, Meta ads, ad research, competitive ad analysis, creative generation, media buying, marketing automation, Apify, generative AI.
+
 ### TrustLens, Site Trust Audit and Scoring
 Next.js, Convex, AI scoring. https://github.com/aayanrehman/trustlens
 Demo video: https://aayanrehman.com/media/trustlens.mp4
