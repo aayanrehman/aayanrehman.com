@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1e3a8a"/>
+</linearGradient>
+<radialGradient id="h" cx="22%" cy="18%" r="85%">
+<stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</radialGradient>
+<filter id="b" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="46"/></filter>
+<filter id="s" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".22"/></filter>
+</defs>
+<rect width="640" height="640" fill="url(#g)"/>
+<circle cx="520" cy="120" r="150" fill="#bfdbfe" opacity=".55" filter="url(#b)"/>
+<circle cx="110" cy="540" r="130" fill="#bfdbfe" opacity=".40" filter="url(#b)"/>
+<rect width="640" height="640" fill="url(#h)"/>
+<g filter="url(#s)" fill="none" stroke="#10100e" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M320 150L104 240l216 90 216-90z" fill="#ffffff"/>
+<path d="M320 150L104 240l216 90 216-90z"/>
+<path d="M176 278v116c0 46 72 80 144 80s144-34 144-80V278"/>
+<path d="M536 240v124" stroke-width="18"/>
+</g>
+</svg>
