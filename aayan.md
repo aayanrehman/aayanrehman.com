@@ -2,6 +2,8 @@
 
 AI implementation and growth consultant, AI business analyst, and automation builder. Runs AI discovery and implementation for enterprise companies, including Voya Financial, and founded WaterfallGrowth, an AI-native growth agency. I turn manual business processes into automated, agent-driven workflows that save teams time and increase revenue.
 
+Currently: incoming Business Insights & Analytics Leadership Development Program (BI&A LDP) intern at Travelers, Sales Strategy Intern at Voya Financial, and founder of WaterfallGrowth.
+
 Seeking: Business Analyst, AI Business Analyst, AI/ML Product Analyst, Systems Analyst, Automation Analyst, Data Analyst, Solutions Analyst, Technology Consulting, and AI Strategy internships and full-time roles (Summer 2027 internship, 2028 graduate hire). Open to insurance, financial services, fintech, insurtech, consulting, enterprise SaaS, and edtech. Based in Connecticut and Binghamton, NY. Open to NYC, Boston, Hartford, remote, hybrid, and relocation. U.S. Permanent Resident, no sponsorship required.
 
 - Site: https://aayanrehman.com
@@ -32,6 +34,14 @@ Business Administration student (Management Information Systems concentration) a
 **Domain Knowledge:** insurance (P&C, underwriting, claims, submissions, guideline rules, risk assessment, MGAs, carriers), financial services, retirement and benefits, sales operations, RFP and proposal process, pricing, vendor cost analysis, sales strategy, go-to-market, education consulting, edtech.
 
 ## Experience
+
+### Travelers, Business Insights & Analytics Leadership Development Program (BI&A LDP) Intern
+Hartford, CT. Incoming. https://www.travelers.com
+
+- Incoming intern in the Travelers BI&A Leadership Development Program, the analytics track of the company's leadership development pipeline.
+- Business intelligence work across the business insight and analytics community: data analysis, reporting, and presenting solutions to business and analytics problems.
+
+Keywords: business intelligence, BI&A, business insights and analytics, leadership development program, LDP, analytics intern, data analyst intern, insurance analytics, Travelers, Hartford.
 
 ### Voya Financial, Sales Strategy Intern
 Windsor, CT. Summer 2026 to present. https://www.voya.com
