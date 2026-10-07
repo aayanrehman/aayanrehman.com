@@ -459,6 +459,23 @@
   .item p{font-size:.95rem}
   .item ul{margin:8px 0 0 18px;font-size:.95rem}
   .item li{margin-top:4px}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  .clients{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+  .clients li{font-size:.8rem;padding:4px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);transition:border-color .2s,color .2s}
+  .clients li:hover{border-color:var(--orange);color:var(--ink)}
+  .vids{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:28px}
+  .vid{margin:0}
+  .vid-frame{position:relative;aspect-ratio:var(--ar,16/9);border-radius:10px;overflow:hidden;background:#f4f4f4;border:1px solid var(--line)}
+  .vid-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:0;background:none;cursor:pointer;line-height:0}
+  .vid-btn img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  .vid-btn:hover img{transform:scale(1.04)}
+  .vid-btn svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));transition:transform .2s ease}
+  .vid-btn:hover svg{transform:translate(-50%,-50%) scale(1.1)}
+  .vid-media{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+  .vid figcaption{margin-top:8px;font-size:.85rem;font-weight:600}
+  .vid figcaption span{display:block;font-weight:400;font-size:.8rem;color:var(--muted);margin-top:2px}
   form{display:grid;gap:12px}
   input,textarea{font:inherit;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#fafafa;color:var(--ink)}
   input:focus,textarea:focus{outline:none;border-color:var(--orange);background:#fff}
@@ -489,12 +506,18 @@
     </div>
   </header>
 
-  <section>
+  <section class="reveal">
     <h2>Now</h2>
     <div class="item">
       <h3><a href="https://waterfallgrowth.com" target="_blank" rel="noopener">WaterfallGrowth</a></h3>
       <div class="meta">AI growth consulting</div>
       <p>AI-native agency. We scale the authority of independent education consultants and help enterprise education firms automate their processes to save time and increase revenue.</p>
+      <ul class="clients">
+        <li>Inspirate Consulting</li>
+        <li>Evergreen Consulting</li>
+        <li>McNamara Consulting</li>
+      </ul>
+      <p class="muted" style="font-size:.85rem;margin-top:10px">Three signed clients, real engagements, shipped work.</p>
     </div>
     <div class="item">
       <h3><a href="https://www.voya.com" target="_blank" rel="noopener">Voya Financial</a></h3>
@@ -509,8 +532,24 @@
     </div>
   </section>
 
-  <section>
+  <section class="reveal">
     <h2>Projects</h2>
+    <div class="vids">
+      <figure class="vid" style="--ar:9/16" data-src="media/trustlens.mp4">
+        <div class="vid-frame">
+          <button class="vid-btn" type="button" aria-label="Play the TrustLens demo">
+            <img src="media/trustlens-poster.jpg" alt="TrustLens demo" width="456" height="810" loading="lazy" decoding="async">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(0,0,0,.55)"/><path d="M26 21l18 11-18 11z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <figcaption>TrustLens<span>Site trust audit, scored</span></figcaption>
+      </figure>
+    </div>
+    <div class="item">
+      <h3><a href="https://github.com/aayanrehman/trustlens" target="_blank" rel="me noopener">TrustLens</a></h3>
+      <div class="meta">Next.js · Convex · AI scoring</div>
+      <p>Audits a consulting site and scores the signals that make prospects trust it or leave. Runs head-to-head comparisons against competitors and returns a prioritized fix list.</p>
+    </div>
     <div class="item">
       <h3><a href="https://github.com/aayanrehman/underwriteiq" target="_blank" rel="me noopener">UnderwriteIQ</a></h3>
       <div class="meta">Python · SQL · FastAPI</div>
@@ -528,12 +567,12 @@
     </div>
   </section>
 
-  <section>
+  <section class="reveal">
     <h2>Background</h2>
     <p class="muted">B.S. Business Administration (MIS), Binghamton University, 2028. AWS Certified AI Practitioner · Anthropic AI Fluency · AINS.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="reveal">
     <h2>Contact</h2>
     <form action="https://formsubmit.co/aayan.rehmann@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New message from aayanrehman.com">
@@ -550,6 +589,32 @@
 
   <footer>© 2026 Aayan Rehman <span aria-hidden="true">·</span> <a href="aayan.md" title="Plain-text version for AI agents">.md</a></footer>
 </main>
+<script>
+(function(){
+  document.querySelectorAll('.vid-btn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.closest('.vid'), yt = f.dataset.yt, el;
+      if (yt) {
+        el = document.createElement('iframe');
+        el.src = 'https://www.youtube-nocookie.com/embed/' + yt + '?autoplay=1&rel=0';
+        el.allow = 'autoplay; encrypted-media; picture-in-picture';
+        el.allowFullscreen = true;
+      } else {
+        el = document.createElement('video');
+        el.src = f.dataset.src; el.controls = true; el.autoplay = true; el.playsInline = true;
+      }
+      el.className = 'vid-media';
+      b.replaceWith(el);
+    }, {once:true});
+  });
+  var r = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { r.forEach(function(e){e.classList.add('in')}); return; }
+  var o = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); o.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -40px'});
+  r.forEach(function(e){o.observe(e)});
+})();
+</script>
 <script>if(location.search.includes('sent=1'))document.getElementById('sent').hidden=false</script>
 </body>
 </html>
