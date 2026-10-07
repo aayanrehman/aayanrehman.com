@@ -58,10 +58,21 @@ AI-native consulting agency. We scale the authority of independent education con
 - Design and deploy AI agents and workflow automations for lead generation, content production, CRM and pipeline management, client onboarding, and reporting.
 - Build authority and demand-generation systems (content, outbound, LinkedIn automation) for independent consultants.
 - Own client communication, project scoping, delivery, and measurement end to end.
+- Signed clients: Inspirate Consulting, Evergreen Consulting, and McNamara Consulting.
 
 Keywords: AI consulting, AI strategy, growth consulting, automation consulting, agentic CRM, lead generation automation, LinkedIn automation, content automation, edtech, education consulting, enterprise education, B2B, client delivery, founder.
 
 ## Projects
+
+### TrustLens, Site Trust Audit and Scoring
+Next.js, Convex, AI scoring. https://github.com/aayanrehman/trustlens
+Demo video: https://aayanrehman.com/media/trustlens.mp4
+
+- Audits a consulting or advisory website and scores the signals that make prospects trust it or bounce.
+- Runs head-to-head comparisons against named competitors and returns a prioritized fix list.
+- Deterministic scoring with LLM-written explanations on top of testable checks.
+
+Keywords: trust signals, website audit, conversion rate optimization, competitive analysis, AI scoring, Next.js, Convex.
 
 ### UnderwriteIQ, Insurance Risk-Assessment Engine
 Python, SQL, SQLite, FastAPI, pytest, GitHub Actions. https://github.com/aayanrehman/underwriteiq
