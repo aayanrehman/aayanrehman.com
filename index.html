@@ -335,8 +335,44 @@
       "name": "Projects by Aayan Ur Rehman",
       "itemListElement": [
         {
+          "@type": "SoftwareApplication",
+          "name": "Waterfall Crew",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Claude Code",
+          "description": "A Claude Code mod that runs a crew of specialised subagents in parallel against real client work, with a live crew pane, task queues and a cost meter.",
+          "author": {
+            "@id": "https://aayanrehman.com/#person"
+          },
+          "video": {
+            "@type": "VideoObject",
+            "name": "Waterfall Crew: four agents, four clients, one dispatch",
+            "description": "A Claude Code mod dispatching four subagents in parallel across four client accounts.",
+            "thumbnailUrl": "https://aayanrehman.com/media/claude-mod-poster.jpg",
+            "contentUrl": "https://aayanrehman.com/media/claude-mod.mp4",
+            "uploadDate": "2026-10-07"
+          },
+          "position": 1
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Evergreen ad pipeline",
+          "description": "Scanned 721 competitor ads, scored each for offer, proof and urgency, then generated 26 on-brand ads and 2 reels for $4.36 of compute.",
+          "author": {
+            "@id": "https://aayanrehman.com/#person"
+          },
+          "video": {
+            "@type": "VideoObject",
+            "name": "Evergreen ad pipeline demo",
+            "description": "Dashboard walkthrough of an AI ad research and generation pipeline for a college consulting firm.",
+            "thumbnailUrl": "https://aayanrehman.com/media/evergreen-poster.jpg",
+            "contentUrl": "https://aayanrehman.com/media/evergreen.mp4",
+            "uploadDate": "2026-10-01"
+          },
+          "position": 2
+        },
+        {
           "@type": "SoftwareSourceCode",
-          "position": 1,
+          "position": 3,
           "name": "TrustLens",
           "url": "https://github.com/aayanrehman/trustlens",
           "codeRepository": "https://github.com/aayanrehman/trustlens",
@@ -356,7 +392,7 @@
         },
         {
           "@type": "SoftwareSourceCode",
-          "position": 2,
+          "position": 4,
           "name": "UnderwriteIQ",
           "url": "https://github.com/aayanrehman/underwriteiq",
           "codeRepository": "https://github.com/aayanrehman/underwriteiq",
@@ -368,7 +404,7 @@
         },
         {
           "@type": "SoftwareSourceCode",
-          "position": 3,
+          "position": 5,
           "name": "CaseSprint AI",
           "url": "https://github.com/aayanrehman/casesprint-ai",
           "codeRepository": "https://github.com/aayanrehman/casesprint-ai",
@@ -380,7 +416,7 @@
         },
         {
           "@type": "CreativeWorkSeries",
-          "position": 4,
+          "position": 6,
           "name": "KnowSure",
           "url": "https://github.com/aayanrehman/KnowSure",
           "genre": "AI insurance education video",
@@ -449,74 +485,145 @@
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--orange:#F26B1D;--ink:#1a1a1a;--muted:#6b6b6b;--line:#ececec;--bg:#fff}
+  :root{
+    --paper:#fff;
+    --ink:#14130f;
+    --muted:#6e6a62;
+    --rule:#e7e3db;
+    --signal:#f26b1d;
+    --wash:#fbf8f4;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
-  main{max-width:640px;margin:0 auto;padding:72px 24px 96px}
-  a{color:var(--orange);text-decoration:none}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Instrument Sans",system-ui,sans-serif;
+    background:var(--paper);color:var(--ink);
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .bar{position:fixed;top:0;left:0;right:0;height:2px;background:var(--signal);transform:scaleX(0);transform-origin:0 50%;z-index:10}
+  main{max-width:720px;margin:0 auto;padding:0 24px 120px}
+  a{color:var(--signal);text-decoration:none}
   a:hover{text-decoration:underline}
-  section{margin-top:56px}
-  h1{font-size:2rem;font-weight:600;letter-spacing:-.02em;line-height:1.2}
-  h2{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
-  h3{font-size:1rem;font-weight:600}
-  h3 a{color:var(--ink)}
-  h3 a:hover{color:var(--orange)}
-  p{color:var(--ink)}
-  .muted{color:var(--muted)}
-  .hero{display:flex;align-items:center;gap:28px}
-  .hero img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid var(--orange);flex-shrink:0}
-  .hero p{margin-top:6px;color:var(--muted)}
-  .socials{display:flex;gap:16px;margin-top:16px}
-  .socials a{color:var(--muted);display:inline-flex}
-  .socials a:hover{color:var(--orange)}
-  .socials svg{width:20px;height:20px;fill:currentColor}
-  .item{padding:20px 0;border-top:1px solid var(--line)}
-  .item:last-child{border-bottom:1px solid var(--line)}
-  .item .meta{font-size:.85rem;color:var(--muted);margin-bottom:6px}
-  .item p{font-size:.95rem}
-  .item ul{margin:8px 0 0 18px;font-size:.95rem}
-  .item li{margin-top:4px}
-  .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-  .clients{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
-  .clients li{font-size:.8rem;padding:4px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);transition:border-color .2s,color .2s}
-  .clients li:hover{border-color:var(--orange);color:var(--ink)}
-  .vids{display:flex;flex-wrap:wrap;align-items:flex-start;gap:18px;margin-bottom:28px}
-  .vid{flex:1 1 170px;max-width:250px}
-  .vid-frame{position:relative;aspect-ratio:var(--ar,16/9);border-radius:10px;overflow:hidden;background:#f4f4f4;border:1px solid var(--line)}
-  .vid-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:0;background:none;cursor:pointer;line-height:0}
-  .vid-btn img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
-  .vid-btn:hover img{transform:scale(1.04)}
-  .vid-btn svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));transition:transform .2s ease}
-  .vid-btn:hover svg{transform:translate(-50%,-50%) scale(1.1)}
-  .vid-media{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
-  .vid figcaption{margin-top:8px;font-size:.85rem;font-weight:600}
-  .vid figcaption span{display:block;font-weight:400;font-size:.8rem;color:var(--muted);margin-top:2px}
-  form{display:grid;gap:12px}
-  input,textarea{font:inherit;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#fafafa;color:var(--ink)}
-  input:focus,textarea:focus{outline:none;border-color:var(--orange);background:#fff}
-  textarea{min-height:120px;resize:vertical}
-  button{font:inherit;font-weight:600;padding:12px 22px;border:0;border-radius:8px;background:var(--orange);color:#fff;cursor:pointer;justify-self:start}
-  button:hover{filter:brightness(.93)}
-  footer{margin-top:72px;font-size:.8rem;color:var(--muted)}
+  :focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:3px}
+
+  /* ---- hero ---- */
+  .top{display:flex;align-items:flex-start;gap:22px;padding:68px 0 34px}
+  .top img.me{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none}
+  h1{font-size:clamp(2.1rem,6.5vw,3rem);font-weight:600;letter-spacing:-.035em;line-height:1.03}
+  .lede{font-size:clamp(1.02rem,2.3vw,1.16rem);margin-top:12px;max-width:34ch;color:#3a3833}
+  .links{display:flex;gap:15px;margin-top:18px}
+  .links a{color:var(--muted);display:inline-flex}
+  .links a:hover{color:var(--signal)}
+  .links svg{width:19px;height:19px;fill:currentColor}
+
+  /* ---- hero film ---- */
+  .film{position:relative;border-radius:14px;overflow:hidden;background:#0e0d0b;aspect-ratio:16/9}
+  .film video,.film img{width:100%;height:100%;object-fit:cover;display:block}
+  .film .cap{
+    position:absolute;left:0;right:0;bottom:0;padding:34px 18px 14px;
+    background:linear-gradient(transparent,rgba(8,8,8,.82));
+    color:#fff;font-size:.86rem;font-weight:500;
+  }
+  .filmnote{margin-top:12px;color:var(--muted);font-size:.9rem}
+  @media (min-width:900px){.film{width:calc(100% + 110px);margin-left:-55px}}
+
+  /* ---- section headings ---- */
+  h2{
+    font-size:1.08rem;font-weight:600;letter-spacing:-.012em;
+    padding-top:12px;border-top:1px solid var(--rule);
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  }
+  h2 em{font-style:normal;font-weight:400;font-size:.82rem;color:var(--muted)}
+  section{margin-top:62px}
+
+  /* ---- crew rows ---- */
+  .crew{margin-top:18px;border-bottom:1px solid var(--rule)}
+  .crew details{border-top:1px solid var(--rule)}
+  .crew details:first-child{border-top:0}
+  .crew summary{
+    display:grid;grid-template-columns:5.6rem 1fr auto;gap:14px;align-items:baseline;
+    padding:13px 2px;cursor:pointer;list-style:none;
+  }
+  .crew summary::-webkit-details-marker{display:none}
+  .crew summary:hover{background:var(--wash)}
+  .crew .who{font-weight:600;font-size:.95rem}
+  .crew .job{color:var(--muted);font-size:.93rem}
+  .crew .firm{font-size:.82rem;color:var(--ink);white-space:nowrap}
+  .crew .firm::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--signal);margin-right:7px;vertical-align:1px}
+  .crew p{padding:0 2px 16px;font-size:.92rem;color:#45423c;max-width:60ch}
+  .crew code{font-family:var(--mono);font-size:.85em;background:var(--wash);border:1px solid var(--rule);border-radius:4px;padding:1px 5px}
+  .crewfoot{margin-top:14px;font-size:.88rem;color:var(--muted)}
+
+  /* ---- built ---- */
+  .built{display:grid;gap:26px;margin-top:22px}
+  @media (min-width:620px){.built{grid-template-columns:1fr 1fr}}
+  .work h3{font-size:1rem;font-weight:600;margin-bottom:3px}
+  .work h3 a{color:var(--ink)}
+  .work h3 a:hover{color:var(--signal)}
+  .work p{font-size:.92rem;color:#45423c;margin-top:9px}
+  .vid-frame{position:relative;aspect-ratio:var(--ar,16/9);border-radius:10px;overflow:hidden;background:#f3f1ed;border:1px solid var(--rule);margin-bottom:11px}
+  .vid-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;line-height:0}
+  .vid-btn img{width:100%;height:100%;object-fit:cover;display:block}
+  .vid-btn svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.4))}
+  .vid-btn:hover svg circle{fill:var(--signal)}
+  .vid-media{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;object-fit:contain}
+  .portrait .vid-frame{max-width:230px}
+
+  /* ---- plain list items ---- */
+  .row{padding:17px 0;border-top:1px solid var(--rule)}
+  .row:first-of-type{border-top:0}
+  .row h3{font-size:1rem;font-weight:600}
+  .row h3 a{color:var(--ink)}
+  .row h3 a:hover{color:var(--signal)}
+  .row .when{font-size:.86rem;color:var(--muted);margin-top:2px}
+  .row p{font-size:.93rem;margin-top:9px;color:#45423c}
+  .row ul{margin:9px 0 0 17px;font-size:.93rem;color:#45423c}
+  .row li{margin-top:5px}
+  .plain{font-size:.95rem;color:#45423c;margin-top:18px;max-width:60ch}
+
+  /* ---- contact ---- */
+  form{display:grid;gap:11px;margin-top:20px;max-width:430px}
+  input,textarea{font:inherit;font-size:.95rem;width:100%;padding:11px 13px;border:1px solid var(--rule);border-radius:7px;background:var(--wash);color:var(--ink)}
+  input::placeholder,textarea::placeholder{color:#9b968d}
+  input:focus,textarea:focus{outline:none;border-color:var(--signal);background:#fff}
+  textarea{min-height:108px;resize:vertical}
+  button{font:inherit;font-weight:600;font-size:.95rem;padding:11px 24px;border:0;border-radius:7px;background:var(--signal);color:#fff;cursor:pointer;justify-self:start}
+  button:hover{background:#d85c13}
+  footer{margin-top:80px;padding-top:18px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
   footer a{color:var(--muted)}
-  footer a:hover{color:var(--orange)}
-  @media (max-width:480px){.hero{flex-direction:column;align-items:flex-start;gap:20px}h1{font-size:1.7rem}}
+  footer a:hover{color:var(--signal)}
+
+  @media (max-width:560px){
+    .top{flex-direction:column;gap:18px;padding-top:48px}
+    .crew summary{grid-template-columns:1fr auto;row-gap:2px}
+    .crew .job{grid-column:1/-1}
+  }
+
+  /* ---- scroll-driven, native, no JS ---- */
+  @media (prefers-reduced-motion:no-preference){
+    @supports (animation-timeline:view()){
+      .film{animation:settle linear both;animation-timeline:view();animation-range:entry 5% entry 80%}
+      @keyframes settle{from{opacity:.25;transform:translateY(26px) scale(.965)}to{opacity:1;transform:none}}
+      .bar{animation:fill linear both;animation-timeline:scroll()}
+      @keyframes fill{to{transform:scaleX(1)}}
+    }
+  }
 </style>
 </head>
 <body>
+<div class="bar" aria-hidden="true"></div>
 <main>
 
-  <header class="hero">
-    <img src="headshot.jpg" alt="Aayan Ur Rehman, AI implementation consultant" width="112" height="112">
+  <header class="top">
+    <img class="me" src="headshot.jpg" alt="Aayan Ur Rehman" width="84" height="84">
     <div>
       <h1>Aayan Ur Rehman</h1>
-      <p>AI implementation and growth. I run discovery, design agents, and automate processes for enterprise teams.</p>
-      <nav class="socials" aria-label="Social links">
+      <p class="lede">I build AI agents that run real client work, and the tooling that keeps them honest.</p>
+      <nav class="links" aria-label="Elsewhere">
         <a href="https://youtube.com/@aayanrehmanai" target="_blank" rel="me noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
         <a href="https://github.com/aayanrehman" target="_blank" rel="me noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
         <a href="https://linkedin.com/in/aayanurrehman" target="_blank" rel="me noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.5 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
@@ -526,74 +633,94 @@
     </div>
   </header>
 
-  <section class="reveal">
-    <h2>Now</h2>
-    <div class="item">
-      <h3><a href="https://waterfallgrowth.com" target="_blank" rel="noopener">WaterfallGrowth</a></h3>
-      <div class="meta">AI growth consulting</div>
-      <p>AI-native agency. We scale the authority of independent education consultants and help enterprise education firms automate their processes to save time and increase revenue.</p>
-      <ul class="clients">
-        <li>Inspirate Consulting</li>
-        <li>Evergreen Consulting</li>
-        <li>McNamara Consulting</li>
-      </ul>
-      <p class="muted" style="font-size:.85rem;margin-top:10px">Three signed clients, real engagements, shipped work.</p>
+  <figure class="film" id="hero-film" data-src="media/claude-mod.mp4">
+    <img src="media/claude-mod-poster.jpg" alt="Four AI agents running tasks for four clients inside Claude Code" width="800" height="450" fetchpriority="high" decoding="async">
+    <figcaption class="cap">One dispatch, four agents, four clients, at the same time.</figcaption>
+  </figure>
+  <p class="filmnote">A mod I wrote for Claude Code: 546 lines, a crew pane, and a cost meter. The run above is the real thing.</p>
+
+  <section>
+    <h2>The crew <em>who does what, and for whom</em></h2>
+    <div class="crew">
+      <details>
+        <summary><span class="who">Scout</span><span class="job">Leads and CRM</span><span class="firm">WaterfallGrowth</span></summary>
+        <p>Works warm leads, logs replies and call outcomes, keeps the CRM current. Reads <code>crm/leads.csv</code>, updates records, flags anything hot.</p>
+      </details>
+      <details>
+        <summary><span class="who">Quill</span><span class="job">Scripts and copy</span><span class="firm">Inspirate Consulting</span></summary>
+        <p>Writes the sequences that get people to show up: webinar reminder emails and SMS, posts, and the frameworks behind them.</p>
+      </details>
+      <details>
+        <summary><span class="who">Pixel</span><span class="job">Creative and pages</span><span class="firm">McNamara Consulting</span></summary>
+        <p>Batches statics and carousels, edits existing creative, builds landing pages. Renders eight statics plus four carousels in one pass.</p>
+      </details>
+      <details>
+        <summary><span class="who">Ledger</span><span class="job">Numbers and ops</span><span class="firm">Evergreen Consulting</span></summary>
+        <p>Sets up Meta campaigns, splits budgets across ad sets, writes the kill and scale rules, then tracks what each one returns.</p>
+      </details>
     </div>
-    <div class="item">
+    <p class="crewfoot">Three of these are signed clients. The fourth is my own agency.</p>
+  </section>
+
+  <section>
+    <h2>Built <em>two of the systems behind that</em></h2>
+    <div class="built">
+      <figure class="work" data-src="media/evergreen.mp4">
+        <div class="vid-frame">
+          <button class="vid-btn" type="button" aria-label="Play the ad pipeline demo">
+            <img src="media/evergreen-poster.jpg" alt="Dashboard scanning 721 competitor ads and scoring them" width="800" height="450" loading="lazy" decoding="async">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(10,10,10,.6)"/><path d="M26 21l18 11-18 11z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <h3>Ad pipeline</h3>
+        <p>Scanned 721 competitor ads, scored every one for offer, proof and urgency, then generated 26 ads and 2 reels on brand. Total compute cost: $4.36.</p>
+      </figure>
+      <figure class="work portrait" data-src="media/trustlens.mp4">
+        <div class="vid-frame" style="--ar:9/16">
+          <button class="vid-btn" type="button" aria-label="Play the TrustLens demo">
+            <img src="media/trustlens-poster.jpg" alt="TrustLens character inspecting a website" width="456" height="810" loading="lazy" decoding="async">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(10,10,10,.6)"/><path d="M26 21l18 11-18 11z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <h3><a href="https://github.com/aayanrehman/trustlens" target="_blank" rel="noopener">TrustLens</a></h3>
+        <p>Scores why a prospect trusts a consulting site or leaves it, head to head against named competitors, and hands back a ranked fix list.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Before that</h2>
+    <div class="row">
       <h3><a href="https://www.voya.com" target="_blank" rel="noopener">Voya Financial</a></h3>
-      <div class="meta">Sales Strategy Intern · Windsor, CT · 2026 to Present</div>
+      <div class="when">Sales Strategy Intern, Windsor CT, since 2026</div>
       <p>Automated the sales proposal process end to end with Power Automate and Copilot:</p>
       <ul>
         <li>Intake agent that pulls source files from shared drives and drafts the RFP brief</li>
-        <li>Pricing agent that calculates proposals directly from the intake data</li>
+        <li>Pricing agent that calculates proposals straight from the intake data</li>
         <li>Cost comparison agent that gives the team one view across vendors</li>
         <li>Client-facing materials generated from the same pipeline, no manual assembly</li>
       </ul>
     </div>
+    <div class="row">
+      <h3><a href="https://github.com/aayanrehman/underwriteiq" target="_blank" rel="noopener">UnderwriteIQ</a></h3>
+      <div class="when">Python, SQL, FastAPI</div>
+      <p>Insurance risk-assessment engine. Rules live in the database, not the code, and the scoring is deterministic. LLMs only write the summary once the numbers are settled.</p>
+    </div>
+    <div class="row">
+      <h3><a href="https://github.com/aayanrehman/casesprint-ai" target="_blank" rel="noopener">CaseSprint AI</a></h3>
+      <div class="when">Python, Streamlit</div>
+      <p>Turns a case prompt into a research plan, an issue tree and timed speaker scripts. Placed first of 50 teams in the EY TechX round.</p>
+    </div>
+    <div class="row">
+      <h3><a href="https://github.com/aayanrehman/KnowSure" target="_blank" rel="noopener">KnowSure</a></h3>
+      <div class="when">AI video, insurance education</div>
+      <p>An insurance series with recurring characters, written and produced by a multi-agent pipeline, built to license to carriers and MGAs.</p>
+    </div>
+    <p class="plain">Studying Management Information Systems at Binghamton University, class of 2028. AWS Certified AI Practitioner, Anthropic AI Fluency, AINS.</p>
   </section>
 
-  <section class="reveal">
-    <h2>Projects</h2>
-    <div class="vids">
-      <figure class="vid" style="--ar:9/16" data-src="media/trustlens.mp4">
-        <div class="vid-frame">
-          <button class="vid-btn" type="button" aria-label="Play the TrustLens demo">
-            <img src="media/trustlens-poster.jpg" alt="TrustLens demo" width="456" height="810" loading="lazy" decoding="async">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(0,0,0,.55)"/><path d="M26 21l18 11-18 11z" fill="#fff"/></svg>
-          </button>
-        </div>
-        <figcaption>TrustLens<span>Site trust audit, scored</span></figcaption>
-      </figure>
-    </div>
-    <div class="item">
-      <h3><a href="https://github.com/aayanrehman/trustlens" target="_blank" rel="me noopener">TrustLens</a></h3>
-      <div class="meta">Next.js · Convex · AI scoring</div>
-      <p>Audits a consulting site and scores the signals that make prospects trust it or leave. Runs head-to-head comparisons against competitors and returns a prioritized fix list.</p>
-    </div>
-    <div class="item">
-      <h3><a href="https://github.com/aayanrehman/underwriteiq" target="_blank" rel="me noopener">UnderwriteIQ</a></h3>
-      <div class="meta">Python · SQL · FastAPI</div>
-      <p>Deterministic insurance risk-assessment engine: rule evaluation, weighted scoring, accept/refer/decline output. LLMs only draft summaries from testable results.</p>
-    </div>
-    <div class="item">
-      <h3><a href="https://github.com/aayanrehman/casesprint-ai" target="_blank" rel="me noopener">CaseSprint AI</a></h3>
-      <div class="meta">Python · Streamlit</div>
-      <p>Case-competition copilot that turns a prompt into a research plan, issue tree, storyline, and timed speaker scripts. Used to place 1st of 50 teams in the EY TechX round.</p>
-    </div>
-    <div class="item">
-      <h3><a href="https://github.com/aayanrehman/KnowSure" target="_blank" rel="me noopener">KnowSure</a></h3>
-      <div class="meta">AI video · Insurance education</div>
-      <p>AI-generated insurance education series with recurring characters and running storylines. Multi-agent orchestration handles scripting, prompt generation, and video production end to end, built for B2B licensing to carriers and MGAs.</p>
-    </div>
-  </section>
-
-  <section class="reveal">
-    <h2>Background</h2>
-    <p class="muted">B.S. Business Administration (MIS), Binghamton University, 2028. AWS Certified AI Practitioner · Anthropic AI Fluency · AINS.</p>
-  </section>
-
-  <section id="contact" class="reveal">
-    <h2>Contact</h2>
+  <section id="contact">
+    <h2>Get in touch</h2>
     <form action="https://formsubmit.co/aayan.rehmann@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New message from aayanrehman.com">
       <input type="hidden" name="_captcha" value="false">
@@ -601,40 +728,55 @@
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="What's on your mind?" required></textarea>
+      <textarea name="message" placeholder="What are you trying to automate?" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <p class="muted" id="sent" hidden style="margin-top:12px">Thanks, I'll get back to you soon.</p>
+    <p class="plain" id="sent" hidden>Thanks, I'll get back to you soon.</p>
   </section>
 
-  <footer>© 2026 Aayan Rehman <span aria-hidden="true">·</span> <a href="aayan.md" title="Plain-text version for AI agents">.md</a></footer>
+  <footer>
+    <span>© 2026 Aayan Ur Rehman</span>
+    <a href="aayan.md" title="Plain-text version for AI agents">.md</a>
+  </footer>
 </main>
+
 <script>
 (function(){
+  var f = document.getElementById('hero-film');
+  function load(){
+    var v = document.createElement('video');
+    v.src = f.dataset.src; v.muted = true; v.loop = true; v.autoplay = true;
+    v.playsInline = true; v.setAttribute('aria-hidden','true');
+    v.poster = 'media/claude-mod-poster.jpg';
+    f.querySelector('img').replaceWith(v);
+    v.play().catch(function(){});
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { io.disconnect(); load(); } });
+    }, {rootMargin:'300px'});
+    io.observe(f);
+  } else { load(); }
+
   document.querySelectorAll('.vid-btn').forEach(function(b){
     b.addEventListener('click', function(){
-      var f = b.closest('.vid'), yt = f.dataset.yt, el;
-      if (yt) {
-        el = document.createElement('iframe');
-        el.src = 'https://www.youtube-nocookie.com/embed/' + yt + '?autoplay=1&rel=0';
-        el.allow = 'autoplay; encrypted-media; picture-in-picture';
-        el.allowFullscreen = true;
-      } else {
-        el = document.createElement('video');
-        el.src = f.dataset.src; el.controls = true; el.autoplay = true; el.playsInline = true;
-      }
-      el.className = 'vid-media';
-      b.replaceWith(el);
+      var fig = b.closest('.work'), v = document.createElement('video');
+      v.src = fig.dataset.src; v.controls = true; v.autoplay = true; v.playsInline = true;
+      v.className = 'vid-media';
+      b.replaceWith(v);
     }, {once:true});
   });
-  var r = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) { r.forEach(function(e){e.classList.add('in')}); return; }
-  var o = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); o.unobserve(e.target); } });
-  }, {rootMargin:'0px 0px -40px'});
-  r.forEach(function(e){o.observe(e)});
+
+  if (!(window.CSS && CSS.supports && CSS.supports('animation-timeline','scroll()'))) {
+    var bar = document.querySelector('.bar');
+    addEventListener('scroll', function(){
+      var h = document.documentElement;
+      bar.style.transform = 'scaleX(' + ((h.scrollTop / (h.scrollHeight - h.clientHeight)) || 0) + ')';
+    }, {passive:true});
+  }
+
+  if (location.search.indexOf('sent=1') > -1) document.getElementById('sent').hidden = false;
 })();
 </script>
-<script>if(location.search.includes('sent=1'))document.getElementById('sent').hidden=false</script>
 </body>
 </html>
