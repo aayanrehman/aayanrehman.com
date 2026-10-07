@@ -535,7 +535,9 @@
   /* ============ the field ============ */
   .field{
     position:relative;overflow:hidden;color:#fff;
-    background:radial-gradient(125% 95% at 26% 46%,var(--ember-hi) 0%,var(--ember) 52%,var(--ember-lo) 100%);
+    background:#b94301;
+    background-image:radial-gradient(78% 62% at 70% 56%,rgba(255,146,46,.26) 0%,rgba(255,146,46,.10) 45%,transparent 72%),
+                     radial-gradient(130% 110% at 10% 8%,rgba(0,0,0,.16) 0%,transparent 60%);
     min-height:min(94svh,820px);display:flex;align-items:flex-end;
   }
   .field .wrap{width:100%;padding-top:96px;padding-bottom:0}
@@ -549,13 +551,12 @@
   .statement span{display:block}
   .statement .i2{padding-left:1.1em}
   .statement .i3{padding-left:.35em}
-  .statement em{font-style:normal;color:#ffd9bd}
 
   .portrait-wrap{justify-self:end;align-self:end;width:min(300px,62vw);margin-bottom:-4px}
   .portrait-wrap img{
     width:100%;height:auto;display:block;
-    -webkit-mask-image:radial-gradient(circle at 50% 44%,#000 50%,rgba(0,0,0,.55) 66%,transparent 76%);
-    mask-image:radial-gradient(circle at 50% 44%,#000 50%,rgba(0,0,0,.55) 66%,transparent 76%);
+    -webkit-mask-image:radial-gradient(circle at 50% 46%,#000 36%,rgba(0,0,0,.72) 50%,rgba(0,0,0,.22) 62%,transparent 70%);
+    mask-image:radial-gradient(circle at 50% 46%,#000 36%,rgba(0,0,0,.72) 50%,rgba(0,0,0,.22) 62%,transparent 70%);
   }
 
   .facts{
@@ -696,7 +697,7 @@
       <div>
         <h1 class="statement">
           <span>I build AI agents</span>
-          <span class="i2">that run <em>real</em></span>
+          <span class="i2">that run real</span>
           <span class="i3">client work.</span>
         </h1>
       </div>
