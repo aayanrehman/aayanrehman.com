@@ -548,8 +548,8 @@
   .bar.stuck{border-bottom-color:var(--line)}
   .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:58px}
   .bar .me{font-family:var(--disp);font-weight:800;font-stretch:75%;text-transform:uppercase;font-size:.95rem;letter-spacing:.04em}
-  .bar nav{display:none;gap:22px}
-  @media (min-width:760px){.bar nav{display:flex}}
+  .bar nav{display:none;gap:clamp(14px,2.4vw,22px)}
+  @media (min-width:620px){.bar nav{display:flex}}
   .bar nav a{font-size:.86rem;color:var(--dim);transition:color .2s;position:relative}
   .bar nav a:hover{color:var(--text)}
   .bar nav a[aria-current="true"]{color:var(--text)}
@@ -586,7 +586,7 @@
     box-shadow:0 30px 60px rgba(0,0,0,.7);border-color:var(--signal);z-index:5;
   }
 
-  .lane{max-width:58ch;margin:0 auto;padding-top:14px}
+  .lane{max-width:50ch;margin:0 auto;padding-top:14px}
   .lane p{color:#cfc7bd;margin-top:12px}
   .lane p b{color:var(--text);font-weight:600}
 
@@ -778,9 +778,9 @@
     </article>
 
     <article class="card-w" data-src="media/trustlens.mp4">
-      <div class="shot" style="--ar:4/3">
+      <div class="shot" style="--ar:4/3;background:#f3f7f8">
         <button class="play" type="button" aria-label="Play the TrustLens demo">
-          <img src="media/trustlens-poster.jpg" alt="TrustLens site audit" width="456" height="810" loading="lazy" decoding="async">
+          <img src="media/trustlens-card.jpg" alt="TrustLens site audit" width="800" height="600" loading="lazy" decoding="async">
           <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(8,8,8,.62)"/><path d="M26 21l18 11-18 11z" fill="#fff"/></svg>
         </button>
       </div>
