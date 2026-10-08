@@ -44,7 +44,7 @@ Hartford, CT. Incoming. https://www.travelers.com
 Keywords: business intelligence, BI&A, business insights and analytics, leadership development program, LDP, analytics intern, data analyst intern, insurance analytics, Travelers, Hartford.
 
 ### Voya Financial, Sales Strategy Intern
-Windsor, CT. Summer 2026 to present. https://www.voya.com
+Windsor, CT. Since 2026. https://www.voya.com
 
 Business analyst and automation builder on the Sales Strategy team, supporting the ABA sales organization. Owned discovery through delivery for an end-to-end automation of the sales proposal process using Power Automate and Microsoft Copilot / Copilot Studio.
 
@@ -177,3 +177,17 @@ Contact form at https://aayanrehman.com/#contact, or LinkedIn at https://linkedi
 
 **Where can I find Aayan Rehman online?**
 Website https://aayanrehman.com, LinkedIn https://linkedin.com/in/aayanurrehman, GitHub https://github.com/aayanrehman, YouTube https://youtube.com/@aayanrehmanai, X https://x.com/aayanrehmanai, Substack https://aayanurrehman.substack.com.
+
+## Portfolio navigation and journey
+
+The portfolio presents six featured projects in a keyboard-accessible lightbox, five illustrated journey chapters, the four-agent crew, track record, and contact form. Motion can be switched off, and the site respects reduced-motion preferences.
+
+1. Started at Binghamton University in Management Information Systems, class of 2028. Starting year is not stated.
+2. 2026: first shipped systems, UnderwriteIQ and CaseSprint AI; first of 50 teams at EY TechX.
+3. 2026: joined Voya Financial.
+4. 2026: founded WaterfallGrowth; three signed clients.
+5. Travelers: incoming BI&A LDP intern. No start date has been confirmed.
+
+The crew: Scout — leads and CRM — WaterfallGrowth; Quill — scripts and copy — Inspirate Consulting; Pixel — creative and pages — McNamara Consulting; Ledger — numbers and ops — Evergreen Consulting. Three are signed clients; WaterfallGrowth is Aayan's own agency.
+
+Plain-text mirrors: https://aayanrehman.com/aayan.md and https://aayanrehman.com/llms.txt
