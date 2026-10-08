@@ -1,29 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img">
 <defs>
-<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#6b21a8"/>
+<linearGradient id="bg" x1="0" y1="0" x2=".3" y2="1">
+<stop offset="0" stop-color="#d3a6ff"/><stop offset="1" stop-color="#7127c9"/>
 </linearGradient>
-<radialGradient id="h" cx="22%" cy="18%" r="85%">
-<stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-</radialGradient>
-<filter id="b" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="46"/></filter>
-<filter id="s" x="-30%" y="-30%" width="160%" height="160%">
-<feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".22"/></filter>
 </defs>
-<rect width="640" height="640" fill="url(#g)"/>
-<circle cx="520" cy="120" r="150" fill="#f0c2ff" opacity=".55" filter="url(#b)"/>
-<circle cx="110" cy="540" r="130" fill="#f0c2ff" opacity=".40" filter="url(#b)"/>
-<rect width="640" height="640" fill="url(#h)"/>
-<g filter="url(#s)" fill="none" stroke="#10100e" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+<rect width="640" height="640" fill="url(#bg)"/>
+<circle cx="86" cy="556" r="54" fill="#fff" opacity=".18"/>
+<circle cx="140" cy="578" r="40" fill="#fff" opacity=".18"/>
+<circle cx="566" cy="80" r="46" fill="#fff" opacity=".16"/>
+<g fill="none" stroke="#2b2118" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
 
-<rect x="248" y="86" width="144" height="86" rx="22" fill="#ffffff"/>
-<path d="M320 172v62M140 234h360M140 234v54M320 234v54M500 234v54"/>
-<rect x="72"  y="288" width="136" height="80" rx="20" fill="#ffffff"/>
-<rect x="252" y="288" width="136" height="80" rx="20" fill="#ffffff"/>
-<rect x="432" y="288" width="136" height="80" rx="20" fill="#ffffff"/>
-<path d="M140 368v52M320 368v52M500 368v52"/>
-<rect x="72"  y="420" width="136" height="68" rx="18" fill="#ffffff" opacity=".7"/>
-<rect x="252" y="420" width="136" height="68" rx="18" fill="#ffffff" opacity=".7"/>
-<rect x="432" y="420" width="136" height="68" rx="18" fill="#ffffff" opacity=".7"/>
+<rect x="236" y="76" width="134" height="76" rx="22" fill="#fff6e8"/>
+<path d="M303 152v48M150 200h306M150 200v44M303 200v44M456 200v44"/>
+<rect x="92"  y="244" width="116" height="68" rx="20" fill="#fff6e8"/>
+<rect x="245" y="244" width="116" height="68" rx="20" fill="#fff6e8"/>
+<rect x="398" y="244" width="116" height="68" rx="20" fill="#fff6e8"/>
+<path d="M150 312v40M303 312v40M456 312v40"/>
+<rect x="92"  y="352" width="116" height="58" rx="18" fill="#fff6e8" opacity=".72"/>
+<rect x="245" y="352" width="116" height="58" rx="18" fill="#fff6e8" opacity=".72"/>
+<rect x="398" y="352" width="116" height="58" rx="18" fill="#fff6e8" opacity=".72"/>
+<ellipse cx="424.72" cy="576.64" rx="21.84" ry="14.280000000000001" fill="#7ee081"/>
+<ellipse cx="495.28" cy="576.64" rx="21.84" ry="14.280000000000001" fill="#7ee081"/>
+<path d="M389.44 494.32L357.52 457.36" fill="none" stroke-linecap="round" stroke-width="21.75" stroke="#2b2118"/>
+<path d="M530.56 494.32L562.48 457.36" fill="none" stroke-linecap="round" stroke-width="21.75" stroke="#2b2118"/>
+<ellipse cx="460" cy="496" rx="84" ry="79.8" fill="#7ee081"/>
+<ellipse cx="431.44" cy="460.72" rx="25.2" ry="16.8" fill="#fff" opacity=".34" stroke="none" transform="rotate(-22 431.44 460.72)"/>
+<ellipse cx="412.96" cy="512.8" rx="14.280000000000001" ry="9.24" fill="#ff9d7a" opacity=".85" stroke="none"/>
+<ellipse cx="507.04" cy="512.8" rx="14.280000000000001" ry="9.24" fill="#ff9d7a" opacity=".85" stroke="none"/>
+<ellipse cx="436.48" cy="489.28" rx="8.82" ry="10.5" fill="#2b2118" stroke="none"/>
+<ellipse cx="483.52" cy="489.28" rx="8.82" ry="10.5" fill="#2b2118" stroke="none"/>
+<circle cx="439.42" cy="484.24" r="2.9400000000000004" fill="#fff" stroke="none"/>
+<circle cx="486.46" cy="484.24" r="2.9400000000000004" fill="#fff" stroke="none"/>
+<path d="M445.72 512.8q14.280000000000001 16.8 28.560000000000002 0" fill="none" stroke="#2b2118" stroke-width="12.75" stroke-linecap="round"/>
 </g>
 </svg>
