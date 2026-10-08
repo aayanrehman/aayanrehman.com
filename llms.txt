@@ -36,7 +36,7 @@ Business Administration student (Management Information Systems concentration) a
 ## Experience
 
 ### Travelers, Business Insights & Analytics Leadership Development Program (BI&A LDP) Intern
-Hartford, CT. Incoming. https://www.travelers.com
+Hartford, CT. Incoming. No start date has been confirmed. https://www.travelers.com
 
 - Incoming intern in the Travelers BI&A Leadership Development Program, the analytics track of the company's leadership development pipeline.
 - Business intelligence work across the business insight and analytics community: data analysis, reporting, and presenting solutions to business and analytics problems.
@@ -85,7 +85,7 @@ Claude Code plugin, multi-agent orchestration. Demo video: https://aayanrehman.c
 Keywords: Claude Code mod, Claude Code plugin, multi-agent orchestration, agent crew, subagents, parallel agents, agentic workflow, agent observability, cost tracking, LLM ops.
 
 ### Evergreen ad pipeline
-AI ad research and generation. Demo video: https://aayanrehman.com/media/evergreen.mp4
+AI ad research and generation. Demo video: https://www.linkedin.com/feed/update/urn:li:ugcPost:7511451823463985155
 
 - Aggregated 721 competitor ads in the college consulting niche with Apify, then scored every one for messaging, offer, proof, urgency and time running.
 - Shortlisted 40 references from those scores and generated 26 on-brand ads, 2 reels and 28 hooks.
@@ -96,7 +96,7 @@ Keywords: paid social, Meta ads, ad research, competitive ad analysis, creative 
 
 ### TrustLens, Site Trust Audit and Scoring
 Next.js, Convex, AI scoring. https://github.com/aayanrehman/trustlens
-Demo video: https://aayanrehman.com/media/trustlens.mp4
+Demo video: https://www.linkedin.com/feed/update/urn:li:ugcPost:7508214531739926529
 
 - Audits a consulting or advisory website and scores the signals that make prospects trust it or bounce.
 - Runs head-to-head comparisons against named competitors and returns a prioritized fix list.
@@ -114,3 +114,7 @@ Python, SQL, SQLite, FastAPI, pytest, GitHub Actions. https://github.com/aayanre
 
 Keywords: underwriting automation, insurance risk scoring, rules engine, decision engine, insurtech, API design, test-driven development, CI/CD, responsible AI.
 
+
+## Portfolio guide
+
+The site includes a local search widget that retrieves excerpts from this page and the visible portfolio, with source links. It does not generate AI answers or send questions to a server.
