@@ -763,4 +763,16 @@ if(rail){
   });
   sync();
 }
+
+// progress bar
+const bar=$('.progress');
+if(bar){const upd=()=>{const h=document.documentElement;const p=h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight);bar.style.transform='scaleX('+p+')'};addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd,{passive:true});upd()}
+
+if('IntersectionObserver'in window){const navs=$$('.bar nav a');const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)navs.forEach(a=>a.setAttribute('aria-current',String(a.hash==='#'+e.target.id)))}),{rootMargin:'-15% 0px -55% 0px'});navs.forEach(a=>{const sec=$(a.hash);if(sec)spy.observe(sec)})}
+if(new URLSearchParams(location.search).get('sent')==='1'){const el=$('#sent');if(el)el.hidden=false}
+const form=$('form');
+if(form){form.addEventListener('submit',()=>{const st=$('#formStatus');if(st)st.textContent='Sending your message…';const b=$('form button[type=submit]');if(b)b.textContent='Sending…'});
+addEventListener('pageshow',()=>{const b=$('form button[type=submit]');if(b)b.textContent='Send it';const st=$('#formStatus');if(st)st.textContent=''})}
+applyMotion();
+})();
 </script></body></html>
