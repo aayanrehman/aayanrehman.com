@@ -606,6 +606,11 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
 .cf-dots button[aria-current="true"]{width:28px;background:var(--orange);border-color:var(--orange)}
 .cf-hint{text-align:center;font-size:.82rem;color:var(--muted);margin-top:14px}
 @media (prefers-reduced-motion:reduce){.cf .project{transition:none}}
+
+/* coverflow owns the card transforms; keep the scroll-reveal off these */
+.cf .project{animation:none !important}
+.cf .project-note{display:none}
+.cf .project .tile{width:100%}
 </style></head><body><a class="skip" href="#main">Skip to content</a><header class="bar" id="bar">
   <div class="wrap bar-inner">
     <a class="me" href="#top" aria-label="Aayan Ur Rehman, back to top"><span>Aayan Ur Rehman</span></a>
