@@ -589,18 +589,24 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
 .journey-shell .head{text-align:center;margin-bottom:6px}
 .journey-shell .head h2{color:var(--bg)}
 .journey-shell .head p{color:#c9b9ab}
-
-.marquee{overflow:hidden;margin:26px -22px 0;padding:4px 0 18px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
-.marquee-track{display:flex;gap:20px;width:max-content;will-change:transform}
-.marquee-track .project{flex:0 0 min(78vw,330px);margin:0}
-.marquee-hint{text-align:center;font-size:.84rem;color:var(--muted);margin-top:2px}
-@media (prefers-reduced-motion:no-preference){
-  html.motion-on .marquee-track{animation:marquee 46s linear infinite}
-  html.motion-on .marquee:hover .marquee-track,
-  html.motion-on .marquee:focus-within .marquee-track{animation-play-state:paused}
   @keyframes marquee{to{transform:translateX(calc(-50% - 10px))}}
-}
-@media (prefers-reduced-motion:reduce){.marquee{overflow-x:auto}}
+}}
+
+.cf{position:relative;height:clamp(430px,62vw,560px);margin:30px 0 0;perspective:1400px;overflow:hidden}
+.cf-stage{position:absolute;inset:0}
+.cf .project{position:absolute;top:0;left:50%;width:clamp(240px,46vw,330px);margin:0;
+  transition:transform .62s cubic-bezier(.22,.9,.28,1),opacity .5s,filter .5s;will-change:transform}
+.cf .project[data-far="1"]{opacity:0;pointer-events:none}
+.cf .project:not([data-pos="0"]) .tile{cursor:pointer}
+.cf-foot{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:10px}
+.cf-count{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cf-count b{font-size:1.5rem;color:var(--orange);font-weight:700;margin-right:4px}
+.cf-dots{display:flex;justify-content:center;gap:9px;margin-top:14px}
+.cf-dots button{width:9px;height:9px;padding:0;border-radius:99px;border:1px solid var(--line);
+  background:var(--paper);cursor:pointer;transition:width .3s,background .3s}
+.cf-dots button[aria-current="true"]{width:28px;background:var(--orange);border-color:var(--orange)}
+.cf-hint{text-align:center;font-size:.82rem;color:var(--muted);margin-top:14px}
+@media (prefers-reduced-motion:reduce){.cf .project{transition:none}}
 </style></head><body><a class="skip" href="#main">Skip to content</a><header class="bar" id="bar">
   <div class="wrap bar-inner">
     <a class="me" href="#top" aria-label="Aayan Ur Rehman, back to top"><span>Aayan Ur Rehman</span></a>
@@ -616,8 +622,8 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
     <h2 class="disp">Featured work</h2>
     <p>Four systems, all shipped and running. Step through them.</p>
   </div>
-  <div class="marquee" id="workMarquee"><div class="marquee-track" id="workTrack"><article class="project" data-i="0"><button class="tile" aria-haspopup="dialog" type="button" data-video="media/claude-mod.mp4">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
+  <div class="cf" id="cf"><div class="cf-stage" id="cfStage"><article class="project" data-i="0"><button class="tile" data-art="media/art/crew.jpg" aria-haspopup="dialog" type="button" data-video="media/claude-mod.mp4">
+      <div class="art"><img src="media/art/crew.jpg" alt="Four robot agents linked to one glowing core" width="900" height="900" loading="lazy" decoding="async"></div>
       <span class="idx">01</span>
       <div class="meta">
         <p class="kick">Claude Code mod</p>
@@ -625,8 +631,8 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
         <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
       </div>
       <div class="body">One dispatch sends four agents at four client accounts at once. 546 lines: crew pane, per-agent task queues, a huddle channel, and a cost meter.</div>
-    </button><p class="project-note">Four agents. Four accounts. One dispatch.</p></article><article class="project" data-i="1"><button class="tile" aria-haspopup="dialog" type="button" data-video="media/evergreen.mp4">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
+    </button><p class="project-note">Four agents. Four accounts. One dispatch.</p></article><article class="project" data-i="1"><button class="tile" data-art="media/art/ads.jpg" aria-haspopup="dialog" type="button" data-video="media/evergreen.mp4">
+      <div class="art"><img src="media/art/ads.jpg" alt="A conveyor of ad creatives with a robot arm selecting the winner" width="900" height="900" loading="lazy" decoding="async"></div>
       <span class="idx">02</span>
       <div class="meta">
         <p class="kick">For Evergreen Consulting</p>
@@ -634,8 +640,8 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
         <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
       </div>
       <div class="body">Pulled 721 competitor ads, scored each for messaging, offer, proof, urgency and runtime, shortlisted 40 references, produced 26 on-brand ads, 2 reels and 28 hooks. Total compute: $4.36.</div>
-    </button><p class="project-note">721 ads researched. $4.36 total compute.</p></article><article class="project" data-i="2"><button class="tile" aria-haspopup="dialog" type="button" data-video="media/trustlens.mp4" data-link="https://github.com/aayanrehman/trustlens" data-linktext="Source on GitHub">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
+    </button><p class="project-note">721 ads researched. $4.36 total compute.</p></article><article class="project" data-i="2"><button class="tile" data-art="media/art/lens.jpg" aria-haspopup="dialog" type="button" data-video="media/trustlens.mp4" data-link="https://github.com/aayanrehman/trustlens" data-linktext="Source on GitHub">
+      <div class="art"><img src="media/art/lens.jpg" alt="A magnifying glass auditing a website for trust signals" width="900" height="900" loading="lazy" decoding="async"></div>
       <span class="idx">03</span>
       <div class="meta">
         <p class="kick">Open source</p>
@@ -643,50 +649,15 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
         <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
       </div>
       <div class="body">Scores why a prospect trusts a consulting site or leaves, head to head against named competitors, returns a ranked fix list.</div>
-    </button><p class="project-note">Why a prospect trusts a site or leaves.</p></article><article class="project" data-i="3"><button class="tile" aria-haspopup="dialog" type="button" data-link="https://github.com/aayanrehman/underwriteiq" data-linktext="Source on GitHub">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
+    </button><p class="project-note">Why a prospect trusts a site or leaves.</p></article><article class="project" data-i="3"><button class="tile" data-art="media/art/uwiq.jpg" aria-haspopup="dialog" type="button" data-link="https://github.com/aayanrehman/underwriteiq" data-linktext="Source on GitHub">
+      <div class="art"><img src="media/art/uwiq.jpg" alt="Insurance submissions sorted into accept, refer and decline" width="900" height="900" loading="lazy" decoding="async"></div>
       <span class="idx">04</span>
       <div class="meta">
         <p class="kick">Python · SQL · FastAPI</p>
         <h3>UnderwriteIQ</h3>
       </div>
       <div class="body">Insurance submission risk engine: schema validation, guideline rules across nine comparison operators, weighted accept/refer/decline score. Rules are database rows, not code. 14 tests in CI.</div>
-    </button><p class="project-note">Rules are database rows, not code.</p></article><article aria-hidden="true" class="project clone" data-i="0"><button class="tile" tabindex="-1" aria-haspopup="dialog" type="button" data-video="media/claude-mod.mp4">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
-      <span class="idx">01</span>
-      <div class="meta">
-        <p class="kick">Claude Code mod</p>
-        <h3>Waterfall Crew</h3>
-        <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
-      </div>
-      <div class="body">One dispatch sends four agents at four client accounts at once. 546 lines: crew pane, per-agent task queues, a huddle channel, and a cost meter.</div>
-    </button><p class="project-note">Four agents. Four accounts. One dispatch.</p></article><article aria-hidden="true" class="project clone" data-i="1"><button class="tile" tabindex="-1" aria-haspopup="dialog" type="button" data-video="media/evergreen.mp4">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
-      <span class="idx">02</span>
-      <div class="meta">
-        <p class="kick">For Evergreen Consulting</p>
-        <h3>Ad pipeline</h3>
-        <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
-      </div>
-      <div class="body">Pulled 721 competitor ads, scored each for messaging, offer, proof, urgency and runtime, shortlisted 40 references, produced 26 on-brand ads, 2 reels and 28 hooks. Total compute: $4.36.</div>
-    </button><p class="project-note">721 ads researched. $4.36 total compute.</p></article><article aria-hidden="true" class="project clone" data-i="2"><button class="tile" tabindex="-1" aria-haspopup="dialog" type="button" data-video="media/trustlens.mp4" data-link="https://github.com/aayanrehman/trustlens" data-linktext="Source on GitHub">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
-      <span class="idx">03</span>
-      <div class="meta">
-        <p class="kick">Open source</p>
-        <h3>TrustLens</h3>
-        <span class="has-vid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Demo</span>
-      </div>
-      <div class="body">Scores why a prospect trusts a consulting site or leaves, head to head against named competitors, returns a ranked fix list.</div>
-    </button><p class="project-note">Why a prospect trusts a site or leaves.</p></article><article aria-hidden="true" class="project clone" data-i="3"><button class="tile" tabindex="-1" aria-haspopup="dialog" type="button" data-link="https://github.com/aayanrehman/underwriteiq" data-linktext="Source on GitHub">
-      <div class="art"><span class="slot" aria-hidden="true"></span></div>
-      <span class="idx">04</span>
-      <div class="meta">
-        <p class="kick">Python · SQL · FastAPI</p>
-        <h3>UnderwriteIQ</h3>
-      </div>
-      <div class="body">Insurance submission risk engine: schema validation, guideline rules across nine comparison operators, weighted accept/refer/decline score. Rules are database rows, not code. 14 tests in CI.</div>
-    </button><p class="project-note">Rules are database rows, not code.</p></article></div></div><p class="marquee-hint">Hover to pause · tap a card for the full story</p>
+    </button><p class="project-note">Rules are database rows, not code.</p></article></div></div><div class="cf-foot"><button class="rnd" type="button" id="cfPrev" aria-label="Previous project">&#8249;</button><span class="cf-count"><b id="cfN">01</b> of 04</span><button class="rnd" type="button" id="cfNext" aria-label="Next project">&#8250;</button></div><div class="cf-dots" id="cfDots"></div><p class="cf-hint">Click a side card to bring it forward · click the front card to open it</p>
 </section>
 
 <section id="journey" class="journey-shell" aria-label="My journey"><div class="wrap"><div class="head"><h2 class="disp">My journey</h2><p>How I got here.</p></div><ol class="road"><li class="stop"><span class="pin" aria-hidden="true"></span><div class="stop-card"><span class="yr">2024</span><h3>Binghamton</h3><p>Started at Binghamton University in Management Information Systems, class of 2028.</p></div></li><li class="stop"><span class="pin" aria-hidden="true"></span><div class="stop-card"><span class="yr">2026</span><h3>First builds</h3><p>Shipped the first real systems, including UnderwriteIQ, and took first of 50 teams at EY TechX.</p></div></li><li class="stop"><span class="pin" aria-hidden="true"></span><div class="stop-card"><span class="yr">2026</span><h3>Voya Financial</h3><p>Automated the sales proposal process end to end with Power Automate and Copilot.</p></div></li><li class="stop"><span class="pin" aria-hidden="true"></span><div class="stop-card"><span class="yr">2026</span><h3>WaterfallGrowth</h3><p>Started the agency and signed three consulting firms, all running on agents I built.</p></div></li><li class="stop"><span class="pin" aria-hidden="true"></span><div class="stop-card"><span class="yr">Incoming</span><h3>Travelers</h3><p>Joining the Business Insights &amp; Analytics Leadership Development Program.</p></div></li></ol></div></section>
@@ -781,6 +752,51 @@ dialog.scrollTop=0}
 function open(i){lastFocus=document.activeElement;show(i);dialog.showModal();document.body.classList.add('locked');$('#sheetClose').focus()}
 document.addEventListener('click',e=>{const t=e.target.closest('.project .tile');if(!t)return;const i=+t.closest('.project').dataset.i||0;open(i)});$$('#fan [data-open]').forEach(b=>b.addEventListener('click',()=>open(+b.dataset.open)));
 $('#sheetClose').addEventListener('click',()=>dialog.close());$('#sheetPrev').addEventListener('click',()=>show(current-1));$('#sheetNext').addEventListener('click',()=>show(current+1));dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.addEventListener('close',()=>{clearPlayer();document.body.classList.remove('locked');lastFocus?.focus({preventScroll:true})});dialog.addEventListener('keydown',e=>{if(e.target.tagName==='VIDEO')return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1))}if(e.key==='Tab'){const focusable=[...dialog.querySelectorAll('button,a[href],video[controls]')].filter(el=>!el.disabled);const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+
+// Featured work: circular coverflow
+const cf=$('#cf'),cfStage=$('#cfStage');
+if(cf){
+  const cards=$$('#cfStage .project'), n=cards.length;
+  const dotWrap=$('#cfDots');
+  cards.forEach((c,i)=>{const b=document.createElement('button');b.type='button';
+    b.setAttribute('aria-label','Show project '+(i+1));b.addEventListener('click',()=>go(i));dotWrap.appendChild(b)});
+  const dots=$$('#cfDots button');
+  let at=0;
+  function layout(){
+    cards.forEach((c,i)=>{
+      let d=i-at; if(d>n/2)d-=n; if(d<-n/2)d+=n;
+      const a=Math.abs(d);
+      const x=d*46, sc=Math.max(.6,1-a*.17), z=10-a;
+      c.style.transform='translateX(calc(-50% + '+x+'%)) translateZ('+(-a*120)+'px) scale('+sc.toFixed(3)+')';
+      c.style.zIndex=z;
+      c.style.opacity=a===0?1:(a===1?.72:.38);
+      c.style.filter=a===0?'none':'saturate(.55) brightness(.9)';
+      c.dataset.pos=d; c.dataset.far=a>2?'1':'0';
+      c.setAttribute('aria-hidden',a===0?'false':'true');
+      c.querySelector('.tile').tabIndex=a===0?0:-1;
+    });
+    $('#cfN').textContent=String(at+1).padStart(2,'0');
+    dots.forEach((b,i)=>b.setAttribute('aria-current',String(i===at)));
+  }
+  function go(i){at=(i%n+n)%n;layout()}
+  $('#cfPrev').addEventListener('click',()=>go(at-1));
+  $('#cfNext').addEventListener('click',()=>go(at+1));
+  // a side card steps forward; the front card opens
+  cfStage.addEventListener('click',e=>{
+    const art=e.target.closest('.project'); if(!art)return;
+    const i=cards.indexOf(art);
+    if(i!==at){e.preventDefault();e.stopPropagation();go(i)}
+  },true);
+  cf.addEventListener('keydown',e=>{
+    if(e.key==='ArrowLeft'){e.preventDefault();go(at-1)}
+    if(e.key==='ArrowRight'){e.preventDefault();go(at+1)}
+  });
+  let x0=null;
+  cf.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
+  cf.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>42)go(at+(dx<0?1:-1));x0=null},{passive:true});
+  layout(); addEventListener('resize',layout,{passive:true});
+}
 
 // progress bar
 const bar=$('.progress');
