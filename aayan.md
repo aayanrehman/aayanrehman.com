@@ -68,7 +68,7 @@ AI-native consulting agency. We scale the authority of independent education con
 - Design and deploy AI agents and workflow automations for lead generation, content production, CRM and pipeline management, client onboarding, and reporting.
 - Build authority and demand-generation systems (content, outbound, LinkedIn automation) for independent consultants.
 - Own client communication, project scoping, delivery, and measurement end to end.
-- Signed clients: Inspirate Consulting, Evergreen Consulting, and McNamara Consulting.
+- Signed firms: Evergreen Consulting (evergreenconsulting.co), Inspirate Consulting (inspirateconsulting.com), McNamara Consulting (mcnamaraconsulting.org).
 
 Keywords: AI consulting, AI strategy, growth consulting, automation consulting, agentic CRM, lead generation automation, LinkedIn automation, content automation, edtech, education consulting, enterprise education, B2B, client delivery, founder.
 
@@ -114,80 +114,3 @@ Python, SQL, SQLite, FastAPI, pytest, GitHub Actions. https://github.com/aayanre
 
 Keywords: underwriting automation, insurance risk scoring, rules engine, decision engine, insurtech, API design, test-driven development, CI/CD, responsible AI.
 
-### CaseSprint AI, Case-Competition Copilot
-Python, Streamlit, GitHub Actions. https://github.com/aayanrehman/casesprint-ai
-
-- Built a copilot that turns a case prompt into a sourced research plan, MECE issue tree, executive storyline, and timed multi-speaker presentation script.
-- Separated LLM judgment from deterministic Python: scripts enforce source traceability, workspace structure, and presentation timing, validated by unit tests in CI.
-- Productized the research-to-presentation workflow used to place first among 50 teams in the EY TechX round of a Binghamton case competition.
-
-Keywords: consulting frameworks, MECE, issue trees, hypothesis-driven problem solving, structured communication, executive storytelling, LLM application, agent workflow, prompt engineering.
-
-### KnowSure, AI Insurance Education Series
-AI video, multi-agent pipeline. https://github.com/aayanrehman/KnowSure
-
-- AI-generated insurance education web series with recurring characters and running storylines, teaching P&C insurance concepts in a watchable format.
-- Multi-agent orchestration handles scripting, prompt generation, and video production end to end; agent system prompts and knowledge files keep brand, characters, and technical accuracy consistent across episodes.
-- Built as a B2B content library for licensing to carriers and MGAs, with public social channels as the proof layer. Includes a documented business model and go-to-market plan.
-
-Keywords: generative AI, AI video, multi-agent systems, content automation, insurance education, P&C insurance, B2B licensing, go-to-market, product thinking.
-
-## Education
-
-**Binghamton University, State University of New York**, Binghamton, NY
-B.S. Business Administration, Management Information Systems (MIS) concentration. Expected May 2028.
-Relevant coursework: Database Management, Systems Analysis and Design, Business Analytics.
-
-## Certifications
-
-- AWS Certified AI Practitioner (AIF-C01)
-- AINS, Associate in Insurance (The Institutes)
-- Anthropic AI Fluency
-- Claude Code 101
-
-## Achievements
-
-- 1st place among 50 teams, EY TechX round, Binghamton University case competition.
-- Founded and operate an AI-native consulting agency while a full-time student.
-
-## Working style
-
-Hypothesis-driven, documentation-first, and biased toward shipping. I map the process before automating it, keep deterministic logic separate from LLM judgment, write tests for anything that touches money or compliance, and leave SOPs behind so teams can own what I build.
-
-## Frequently searched terms
-
-Aayan Ur Rehman, Aayan Rehman, Aayan Rehman AI, Aayan Ur Rehman AI, Aayan Rehman Voya, Aayan Rehman WaterfallGrowth, Aayan Rehman Binghamton, aayanrehmanai, aayanurrehman, AI implementation consultant, enterprise AI implementation, AI discovery, AI growth consultant, business analyst intern, BA intern, AI business analyst, AI analyst, business systems analyst, IT business analyst, technical business analyst, product analyst, systems analyst, data analyst intern, automation analyst, AI product intern, AI strategy intern, technology consulting intern, digital transformation, process automation, intelligent automation, hyperautomation, generative AI, GenAI, LLM, agentic AI, AI agents, multi-agent orchestration, RAG, prompt engineering, Copilot Studio, Power Automate, Power Platform, Power BI, SQL, Python, Salesforce, AWS, Agile, Scrum, Jira, requirements gathering, process mapping, stakeholder management, UAT, SDLC, insurance, insurtech, fintech, financial services, Voya Financial, Binghamton University, MIS, Summer 2027 internship, Class of 2028, Connecticut, New York, Hartford, NYC, Boston, remote.
-
-## FAQ
-
-**Who is Aayan Ur Rehman?**
-Aayan Ur Rehman (also written Aayan Rehman) is an AI implementation and growth consultant based in Connecticut. He runs AI discovery and implementation for enterprise companies, currently at Voya Financial, and founded WaterfallGrowth, an AI-native growth agency for education consultants and enterprise education firms. He studies Management Information Systems at Binghamton University (Class of 2028).
-
-**What does Aayan Rehman do with AI?**
-He maps business processes, identifies where AI and automation create measurable time savings and revenue, then designs and ships the solution: LLM agents, multi-agent orchestration, RAG, and workflow automation built with Power Automate, Copilot Studio, Python, and Claude. At Voya Financial he automated the sales proposal process end to end with intake, pricing, and cost comparison agents.
-
-**What is WaterfallGrowth?**
-WaterfallGrowth (waterfallgrowth.com) is Aayan's AI-native consulting agency. It scales the authority of independent education consultants and helps enterprise education firms implement AI to automate processes, save time, and increase revenue.
-
-**What is Aayan Rehman's background?**
-B.S. Business Administration, MIS concentration, Binghamton University. AWS Certified AI Practitioner, Anthropic AI Fluency, Claude Code 101, and AINS (Associate in Insurance). First place of 50 teams in the EY TechX case competition round.
-
-**How do I contact Aayan Rehman?**
-Contact form at https://aayanrehman.com/#contact, or LinkedIn at https://linkedin.com/in/aayanurrehman.
-
-**Where can I find Aayan Rehman online?**
-Website https://aayanrehman.com, LinkedIn https://linkedin.com/in/aayanurrehman, GitHub https://github.com/aayanrehman, YouTube https://youtube.com/@aayanrehmanai, X https://x.com/aayanrehmanai, Substack https://aayanurrehman.substack.com.
-
-## Portfolio navigation and journey
-
-The portfolio presents six featured projects in a keyboard-accessible lightbox, five illustrated journey chapters, the four-agent crew, track record, and contact form. Motion can be switched off, and the site respects reduced-motion preferences.
-
-1. Started at Binghamton University in Management Information Systems, class of 2028. Starting year is not stated.
-2. 2026: first shipped systems, UnderwriteIQ and CaseSprint AI; first of 50 teams at EY TechX.
-3. 2026: joined Voya Financial.
-4. 2026: founded WaterfallGrowth; three signed clients.
-5. Travelers: incoming BI&A LDP intern. No start date has been confirmed.
-
-The crew: Scout — leads and CRM — WaterfallGrowth; Quill — scripts and copy — Inspirate Consulting; Pixel — creative and pages — McNamara Consulting; Ledger — numbers and ops — Evergreen Consulting. Three are signed clients; WaterfallGrowth is Aayan's own agency.
-
-Plain-text mirrors: https://aayanrehman.com/aayan.md and https://aayanrehman.com/llms.txt
