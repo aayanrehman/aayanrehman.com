@@ -1,1 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title"><title id="title">A little case coach builds a branching issue tree on a whiteboard</title><g stroke-linejoin="round" stroke-linecap="round"><rect width="400" height="400" rx="28" fill="#F3D6E2"/><ellipse cx="207" cy="342" rx="137" ry="15" fill="#30251F" opacity=".09"/><g opacity=".38"><path d="M20 98 Q6 81 24 69 Q21 43 45 45 Q60 23 78 45 Q105 43 105 69 Q128 82 110 98Z" fill="#FFFCF5" stroke="#30251F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M111 302L99 345 M285 302L300 345" fill="none" stroke="#30251F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><rect x="49" y="69" width="296" height="235" rx="16" fill="#FFFCF5" stroke="#30251F" stroke-width="6"/><rect x="157" y="99" width="86" height="47" rx="10" fill="#FFD84D" stroke="#30251F" stroke-width="6"/><path d="M200 146V176H100V195 M200 176H302V195 M200 176V231" fill="none" stroke="#30251F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="70" y="196" width="60" height="37" rx="8" fill="#C8DDA5" stroke="#30251F" stroke-width="6"/><rect x="271" y="196" width="60" height="37" rx="8" fill="#FF7A2F" stroke="#30251F" stroke-width="6"/><rect x="172" y="230" width="59" height="39" rx="8" fill="#EABBD1" stroke="#30251F" stroke-width="6"/><g transform="translate(109 281) scale(0.58)"><path d="M-25 53 L-30 73 Q-45 81 -46 70 L-43 53" fill="#FFFCF5" stroke="#30251F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 53 L28 73 Q43 81 44 70 L40 53" fill="#FFFCF5" stroke="#30251F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M-46 10 Q-67 5 -68 24 Q-65 37 -52 29" fill="#FFFCF5" stroke="#30251F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 10 Q65 -7 70 10 Q79 27 58 30" fill="#FFFCF5" stroke="#30251F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M-49 15 Q-59 -50 0 -51 Q61 -50 49 15 L44 40 Q40 60 0 58 Q-40 60 -44 40 Z" fill="#FF7A2F" stroke="#30251F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M-34 -20 Q-29 -35 -16 -36" fill="#FFFCF5" stroke="#30251F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(0 0) scale(1)"><ellipse cx="-18" cy="0" rx="4" ry="7" fill="#30251F"/><ellipse cx="18" cy="0" rx="4" ry="7" fill="#30251F"/><ellipse cx="-31" cy="13" rx="10" ry="5" fill="#ED9E87"/><ellipse cx="31" cy="13" rx="10" ry="5" fill="#ED9E87"/><path d="M-10 14 Q0 26 10 14" fill="none" stroke="#30251F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g></g><path d="M148 284L183 237" fill="none" stroke="#30251F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M297 29V53 M285 41H309" fill="none" stroke="#30251F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="tE">
+<title id="tE">A character presenting a glossy issue tree</title>
+<defs>
+<radialGradient id="bgE" cx="32%" cy="22%" r="92%">
+  <stop offset="0" stop-color="#a95cf0"/><stop offset="1" stop-color="#5a1aa8"/>
+</radialGradient>
+<radialGradient id="glowE" cx="50%" cy="50%" r="50%">
+  <stop offset="0" stop-color="#e9ccff" stop-opacity=".85"/><stop offset="1" stop-color="#e9ccff" stop-opacity="0"/>
+</radialGradient>
+<filter id="softE" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
+<filter id="tinyE" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+<linearGradient id="sheenE" x1="0" y1="0" x2=".2" y2="1">
+  <stop offset="0" stop-color="#fff" stop-opacity=".58"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="o0" cx="33%" cy="26%" r="78%">
+  <stop offset="0" stop-color="#c9f7cf"/><stop offset=".55" stop-color="#6fe08a"/><stop offset="1" stop-color="#1f9e4d"/>
+</radialGradient></defs>
+<rect width="400" height="400" rx="28" fill="url(#bgE)"/>
+<circle cx="312" cy="78" r="112" fill="url(#glowE)"/>
+<circle cx="82" cy="330" r="96" fill="url(#glowE)" opacity=".7"/>
+<path d="M348 39Q350.6 49.4 361 52Q350.6 54.6 348 65Q345.4 54.6 335 52Q345.4 49.4 348 39Z" fill="#fff" opacity="0.9"/><path d="M44 77Q45.8 84.2 53 86Q45.8 87.8 44 95Q42.2 87.8 35 86Q42.2 84.2 44 77Z" fill="#fff" opacity="0.75"/><path d="M366 292Q367.6 298.4 374 300Q367.6 301.6 366 308Q364.4 301.6 358 300Q364.4 298.4 366 292Z" fill="#fff" opacity="0.6"/>
+<g stroke-linejoin="round" stroke-linecap="round">
+
+<ellipse cx="200.0" cy="106" rx="49.68" ry="13" fill="#1b1008" opacity="0.3" filter="url(#softE)"/>
+<rect x="146" y="40" width="108" height="56" rx="18" fill="#fffdf8" stroke="#2a1f18" stroke-width="7"/>
+<rect x="146" y="40" width="108" height="56" rx="18" fill="url(#sheenE)"/>
+<path d="M200 96v30M92 126h216M92 126v28M200 126v28M308 126v28" stroke="#2a1f18" stroke-width="7" fill="none"/>
+<ellipse cx="92.0" cy="212" rx="38.64" ry="13" fill="#1b1008" opacity="0.3" filter="url(#softE)"/>
+<rect x="50" y="154" width="84" height="48" rx="16" fill="#fffdf8" stroke="#2a1f18" stroke-width="7"/>
+<rect x="50" y="154" width="84" height="48" rx="16" fill="url(#sheenE)"/><ellipse cx="200.0" cy="212" rx="38.64" ry="13" fill="#1b1008" opacity="0.3" filter="url(#softE)"/>
+<rect x="158" y="154" width="84" height="48" rx="16" fill="#fffdf8" stroke="#2a1f18" stroke-width="7"/>
+<rect x="158" y="154" width="84" height="48" rx="16" fill="url(#sheenE)"/><ellipse cx="308.0" cy="212" rx="38.64" ry="13" fill="#1b1008" opacity="0.3" filter="url(#softE)"/>
+<rect x="266" y="154" width="84" height="48" rx="16" fill="#fffdf8" stroke="#2a1f18" stroke-width="7"/>
+<rect x="266" y="154" width="84" height="48" rx="16" fill="url(#sheenE)"/>
+<path d="M92 202v26M200 202v26M308 202v26" stroke="#2a1f18" stroke-width="7" fill="none"/>
+<rect x="50" y="228" width="84" height="40" rx="14" fill="#fffdf8" opacity=".72" stroke="#2a1f18" stroke-width="6"/>
+<rect x="158" y="228" width="84" height="40" rx="14" fill="#fffdf8" opacity=".72" stroke="#2a1f18" stroke-width="6"/>
+<rect x="266" y="228" width="84" height="40" rx="14" fill="#fffdf8" opacity=".72" stroke="#2a1f18" stroke-width="6"/>
+<ellipse cx="306" cy="368.92" rx="39.56" ry="9.200000000000001" fill="#1b1008" opacity="0.34" filter="url(#softE)"/>
+<path d="M268.28 319.24L244.36 296.24" stroke="#2a1f18" stroke-width="9.7" stroke-linecap="round" fill="none"/>
+<circle cx="244.36" cy="296.24" r="6.4" fill="url(#o0)" stroke="#2a1f18" stroke-width="3.4"/>
+<path d="M343.72 319.24L367.64 296.24" stroke="#2a1f18" stroke-width="9.7" stroke-linecap="round" fill="none"/>
+<circle cx="367.64" cy="296.24" r="6.4" fill="url(#o0)" stroke="#2a1f18" stroke-width="3.4"/>
+<ellipse cx="286.68" cy="365.24" rx="11.5" ry="7.8" fill="url(#o0)" stroke="#2a1f18" stroke-width="3.4"/>
+<ellipse cx="325.32" cy="365.24" rx="11.5" ry="7.8" fill="url(#o0)" stroke="#2a1f18" stroke-width="3.4"/>
+<circle cx="306" cy="322" r="46" fill="url(#o0)" stroke="#2a1f18" stroke-width="3.9"/>
+<path d="M346.48 343.16A46 46 0 0 1 292.2 365.7" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="4.1" stroke-linecap="round"/>
+<ellipse cx="289.44" cy="301.76" rx="13.8" ry="8.7" fill="#fff" opacity=".72" transform="rotate(-26 289.44 301.76)" filter="url(#tinyE)"/>
+<circle cx="325.32" cy="298.08" r="3.2" fill="#fff" opacity=".8"/>
+<path d="M286.21999999999997 321.08q5.98 -8.74 11.96 0" fill="none" stroke="#2a1f18" stroke-width="3.8" stroke-linecap="round"/>
+<path d="M313.82 321.08q5.98 -8.74 11.96 0" fill="none" stroke="#2a1f18" stroke-width="3.8" stroke-linecap="round"/>
+<path d="M299.1 330.74q6.8999999999999995 8.28 13.799999999999999 0" fill="none" stroke="#2a1f18" stroke-width="3.6" stroke-linecap="round"/>
+<ellipse cx="279.78" cy="329.82" rx="6.9" ry="4.4" fill="#ff7d5c" opacity=".6"/>
+<ellipse cx="332.22" cy="329.82" rx="6.9" ry="4.4" fill="#ff7d5c" opacity=".6"/>
+</g>
+</svg>
