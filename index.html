@@ -559,12 +559,13 @@ html.motion-on .journey-progress{flex-shrink:0;margin-top:12px}
   background:var(--bg);border:2px solid var(--line);display:block}
 .pin::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);
   transform:scale(0);transition:transform .45s var(--ease)}
-.stop-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+.stop-card{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);
   padding:18px 20px;box-shadow:var(--shadow)}
 .stop-card .yr{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   color:var(--orange);margin-bottom:5px}
-.stop-card h3{font-family:var(--display);font-size:1.12rem;font-weight:700;letter-spacing:-.02em}
+.stop-card h3{font-family:var(--display);font-size:1.12rem;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
 .stop-card p{margin-top:7px;color:var(--muted);font-size:.95rem;max-width:62ch}
+.road .pin{background:var(--paper)}
 @media (min-width:820px){
   .road{padding-left:0}
   .road::before,.road::after{left:50%;margin-left:-1px}
