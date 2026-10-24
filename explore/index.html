@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent City | Aayan Ur Rehman</title>
+<meta name="description" content="Walk around a pixel town where the townspeople are the AI agents Aayan Ur Rehman built: Voya sales agents, EB1A Ready, UnderwriteIQ, TrustLens and more.">
+<link rel="canonical" href="https://aayanrehman.com/explore/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agent City | Aayan Ur Rehman">
+<meta property="og:description" content="A pixel town where the townspeople are the AI agents I built. Walk in, say hi, collect them all.">
+<meta property="og:url" content="https://aayanrehman.com/explore/">
+<meta property="og:image" content="https://aayanrehman.com/og.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><a class="back" href="/">← aayanrehman.com</a><h1>AGENT CITY</h1><p>Aayan Ur Rehman · AI engineer, agent builder &amp; analyst</p></div>
+    <nav>
+      <a class="pbtn" href="#list">Skip to list</a>
+      <a class="pbtn" href="https://github.com/aayanrehman" target="_blank" rel="noopener">GitHub</a>
+      <a class="pbtn" href="https://www.linkedin.com/in/aayanurrehman" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+  <div class="frame px" id="frame"></div>
+  <p class="hint">The townspeople are AI agents I actually built. Walk into one to talk, walk into a door to go in. The <b style="color:#ffc83d">!</b> marks someone you haven't met yet. Take the Metro to fast travel.</p>
+  <details class="list" id="list"><summary>▶ PREFER A LIST? EVERYTHING IN THE TOWN, NO WALKING</summary><div id="listBody"></div></details>
+  <footer>One &lt;canvas&gt;, no game engine. Drawn once, and it only redraws while something moves, so an idle tab uses ~0% CPU.</footer>
+</div>
+<script src="content.js"></script>
+<script src="engine.js"></script>
+<script>
+const bot = (body, eye = "#7dffb0") => ({body, eye});
+const AG_POS = [[37,11],[41,11],[49,11],[53,11],[37,15],[41,15],[49,15],[53,15]];
+const AG_COL = ["#f37021","#e4002b","#3d63d6","#14b894","#a34bd1","#ff9a1f","#1b3a8c","#c0392b"];
+
+startWorld({
+  frame: document.getElementById("frame"), key: "agent-city", title: "Agent City",
+  titleHtml: "AGENT<br>CITY", startToast: "TIP: TALK TO BYTE, THE BOT BY THE ROAD",
+  intro: ["A pixel town where the townspeople are AI agents I built.", "Meet them all. Go into every building."],
+  w: 64, h: 44, view: matchMedia("(max-width: 640px)").matches ? [240, 288] : [400, 224], seed: 11, spawn: [31, 24], border: "tree",
+  colors: {grass: "#62b04a", grassDark: "#55a03f", grassLight: "#74c25a"},
+  player: {look: "person", colors: {skin: "#c68e63", hair: "#1b1b22", shirt: "#e4002b", pants: "#1b3a8c"}},
+  paint: [
+    ["sidewalk", 0, 19, 64, 1], ["sidewalk", 0, 23, 64, 1], ["sidewalk", 29, 0, 1, 44], ["sidewalk", 33, 0, 1, 44],
+    ["road", 0, 20, 64, 3], ["road", 30, 0, 3, 44],
+    ["laneH", 1, 21, 28], ["laneH", 34, 21, 29], ["laneV", 31, 1, 18], ["laneV", 31, 24, 19],
+    // NW campus
+    ["sidewalk", 1, 10, 28, 1], ["sidewalk", 13, 9, 1, 10],
+    // NE Voya plaza
+    ["plaza", 34, 9, 29, 10],
+    // SW growth district
+    ["sidewalk", 1, 31, 28, 2], ["sidewalk", 13, 24, 2, 7], ["sidewalk", 1, 41, 28, 1], ["sidewalk", 14, 33, 1, 8],
+    // SE builders' row
+    ["sidewalk", 34, 31, 29, 2], ["sidewalk", 44, 24, 2, 7], ["sidewalk", 34, 41, 20, 1], ["sidewalk", 44, 33, 2, 8],
+    ["sand", 53, 34, 10, 8], ["water", 54, 35, 8, 6],
+  ],
+  buildings: [
+    {content: "binghamton", x: 3, y: 2, w: 9, h: 6, style: "house", label: "BINGHAMTON U", colors: {wall: "#efe9da", roof: "#005a43", roofDark: "#003d2e", columns: 1, plate: "#005a43"}},
+    {content: "youthrive", x: 15, y: 3, w: 6, h: 5, style: "house", label: "YOUTHRIVE", colors: {roof: "#2e86de", roofDark: "#1f5f9e"}},
+    {content: "paranoid", x: 22, y: 3, w: 6, h: 5, style: "house", label: "PARANOID", colors: {wall: "#2b2b2b", roof: "#111", roofDark: "#000", awning: "#111", glass: "#ddd"}},
+    {content: "travelers", x: 3, y: 12, w: 7, h: 6, style: "office", label: "TRAVELERS", colors: {roof: "#c8102e", wall: "#e9e4dc"}},
+    {content: "next", x: 15, y: 12, w: 8, h: 5, style: "construction", label: "YOUR TEAM?"},
+    {name: "Metro", x: 25, y: 14, w: 3, h: 4, style: "subway", action: "travel", nocount: 1, travelText: "Where to? The Metro runs between every district."},
+    {content: "bmw", x: 34, y: 2, w: 5, h: 6, style: "showroom", label: "2030"},
+    {content: "voya", x: 40, y: 1, w: 10, h: 8, style: "office", label: "VOYA", colors: {roof: "#f37021", wall: "#fbe6d6", glass: "#ffd2b3"}},
+    {content: "linkedin", x: 55, y: 1, w: 5, h: 8, style: "office", label: "in", colors: {roof: "#0a66c2", wall: "#d6e7f8"}},
+    {content: "waterfall", x: 3, y: 25, w: 9, h: 6, style: "office", label: "WATERFALL", colors: {roof: "#0e7c86", wall: "#d8f1ef", glass: "#9fe8ff"}},
+    {content: "clients", x: 16, y: 25, w: 7, h: 5, style: "house", label: "SALES CALLS", colors: {roof: "#d35400", roofDark: "#a04000", awning: "#d35400"}},
+    {content: "collegewall", x: 3, y: 34, w: 10, h: 4, style: "wall", label: "COLLEGE WALL"},
+    {content: "trustlens", x: 16, y: 33, w: 5, h: 7, style: "watchtower", label: "LENS", colors: {wall: "#e9e4dc", roof: "#0b2a5b", base: "#cfc8b8", lens: 1, glass: "#ffe680"}},
+    {content: "lineup", x: 22, y: 33, w: 6, h: 6, style: "office", label: "LINEUP", colors: {roof: "#5b3fd1", wall: "#ece7ff"}},
+    {content: "eb1a", x: 35, y: 25, w: 9, h: 6, style: "office", label: "EB1A READY", colors: {roof: "#0b1530", wall: "#dfe6f5", glass: "#9fbfff"}},
+    {content: "underwriteiq", x: 46, y: 25, w: 7, h: 6, style: "office", label: "UNDERWRITE", colors: {roof: "#2c3e50", wall: "#e6e2d6"}},
+    {content: "crewhq", x: 55, y: 25, w: 7, h: 6, style: "house", label: "CREW HQ", colors: {wall: "#d7d2c8", roof: "#f97316", roofDark: "#c2570c", chimney: 1}},
+    {content: "arcade", x: 35, y: 34, w: 9, h: 6, style: "arcade", label: "ARCADE"},
+    {content: "github", x: 46, y: 34, w: 6, h: 5, style: "office", label: "GITHUB", colors: {roof: "#24292f", wall: "#57606a", glass: "#39d353"}},
+  ],
+  npcs: [
+    {id: "guide", nocount: 1, name: "Byte", look: "bot", x: 34, y: 24, colors: bot("#ffc83d", "#1b1b22"),
+     lines: ["BEEP! Welcome to Agent City. I'm Byte.", "Everyone in this town is an AI agent Aayan built. Walk into them to say hi.", "Voya Plaza is up north-east: 8 agents work there. Builders' Row and the Arcade are south-east. Campus is north-west.", "The yellow ! means you haven't met someone yet. Press QUESTS up top to track progress. Have fun!"]},
+    ...AGENTS.map((a, i) => ({id: a.id, name: a.name, look: "bot", x: AG_POS[i][0], y: AG_POS[i][1], colors: bot(AG_COL[i]),
+      lines: [`BEEP BOOP. I'm the ${a.name}. Aayan built me at Voya.`, a.desc]})),
+    {content: "aws", look: "bot", x: 11, y: 14, colors: bot("#ff9900", "#ffe680"), name: "Cert Bot",
+     lines: ["I keep the certificates. Aayan is an AWS Certified AI Practitioner.", "Also: Anthropic AI Fluency and the AINS insurance designation."]},
+    {content: "openclaw", look: "bot", x: 37, y: 32, colors: bot("#14b894"), lines: ["I'm OpenClaw. I text real-estate leads back so agents don't have to.", PROFILE.openclaw.blurb]},
+    {content: "presales", look: "bot", x: 41, y: 32, colors: bot("#3d63d6"), lines: ["I'm the Presales Agent. Feed me an RFP.", PROFILE.presales.blurb]},
+    {content: "casesprint", look: "bot", x: 52, y: 32, colors: bot("#a34bd1"), lines: ["CaseSprint AI here. I help case teams go from prompt to final pitch.", PROFILE.casesprint.blurb]},
+    {content: "sketchy", look: "person", x: 36, y: 40, colors: {skin: "#f1c27d", hair: "#ff4fd8", shirt: "#4ff0ff", pants: "#2a1840"},
+     lines: ["Psst. I might be the imposter.", PROFILE.sketchy.blurb]},
+    {content: "skyleaf", look: "person", x: 42, y: 40, colors: {skin: "#e0ac69", hair: "#1b1b22", shirt: "#ff9a1f", pants: "#1b1b22", band: "#3d63d6"},
+     lines: ["I came from Skyleaf, a ninja game Aayan made. It's playable in your browser.", PROFILE.skyleaf.blurb]},
+  ],
+  signs: [
+    {x: 28, y: 24, name: "Town sign", lines: ["AGENT CITY. NW: Campus & Career. NE: Voya Plaza. SW: Growth District. SE: Builders' Row & Arcade."]},
+    {x: 57, y: 12, name: "Plaza sign", lines: ["VOYA AGENT PLAZA. 8 agents and apps shipped during one internship. Say hi to each of them."]},
+    {x: 12, y: 32, name: "District sign", lines: ["GROWTH DISTRICT. Home of Waterfall Growth: AI growth systems for admissions firms."]},
+  ],
+  deco: [["lamp", 35, 10], ["lamp", 61, 10], ["lamp", 35, 17], ["lamp", 61, 17], ["bench", 45, 17], ["bench", 46, 17],
+         ["car", 6, 20], ["car", 14, 22], ["car", 50, 20], ["car", 58, 22], ["lamp", 2, 24], ["lamp", 27, 24], ["lamp", 36, 24], ["lamp", 62, 24]],
+  scatter: [["tree", .1], ["bush", .03], ["flowers", .05], ["tuft", .06]],
+  stops: [{name: "Campus", x: 13, y: 18}, {name: "Voya Plaza", x: 45, y: 10}, {name: "Growth District", x: 13, y: 32}, {name: "Builders' Row", x: 45, y: 32}, {name: "Arcade", x: 40, y: 41}, {name: "Town Center", x: 31, y: 24}],
+  quests: [
+    {name: "Meet every Voya agent", ids: AGENTS.map(a => a.id)},
+    {name: "Visit every AI build", ids: ["eb1a", "underwriteiq", "crewhq", "trustlens", "lineup", "openclaw", "presales", "casesprint"]},
+    {name: "Tour the Growth District", ids: ["waterfall", "clients", "collegewall"]},
+    {name: "Walk the career path", ids: ["binghamton", "youthrive", "paranoid", "voya", "travelers", "next"]},
+    {name: "Play in the Arcade", ids: ["arcade", "sketchy", "skyleaf"]},
+  ],
+}).then(api => window.game = api);
+
+// the same content as a plain list, for skimmers and screen readers
+const ORDER = ["voya", "travelers", "waterfall", "clients", "eb1a", "underwriteiq", "crewhq", "trustlens", "lineup", "collegewall", "openclaw", "presales", "casesprint",
+               "sketchy", "skyleaf", "bmw", "paranoid", "youthrive", "binghamton", "aws", "github", "linkedin", "next"];
+const e = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.getElementById("listBody").innerHTML = ORDER.map(id => { const p = PROFILE[id];
+  return `<section><h3>${e(p.name)}<small>${e(p.kicker)} · ${e(p.sub)}</small></h3><p>${e(p.blurb)}</p>` +
+    (p.stats ? `<p>${p.stats.map(([b, t]) => `<b>${e(b)}</b> ${e(t)}`).join(" · ")}</p>` : "") +
+    (p.items ? `<ul>${p.items.map(([n, d]) => `<li><b>${e(n)}:</b> ${e(d)}</li>`).join("")}</ul>` : "") +
+    (p.links ? `<p>${p.links.map(([t, u]) => `<a href="${e(u)}" target="_blank" rel="noopener">${e(t)} ↗</a>`).join(" · ")}</p>` : "") + `</section>`; }).join("");
+if (location.hash === "#list") document.getElementById("list").open = true;
+document.querySelector('a[href="#list"]').addEventListener("click", () => document.getElementById("list").open = true);
+</script>
+</body>
+</html>
