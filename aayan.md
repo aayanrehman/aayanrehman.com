@@ -20,6 +20,7 @@ Last updated: 2026-11-10
 - Substack: https://aayanurrehman.substack.com
 - GitHub: https://github.com/aayanrehman
 - Company: https://www.waterfallgrowth.com
+- Founders page: https://www.waterfallgrowth.com/founders
 - Book a call: https://www.waterfallgrowth.com/book
 - Contact form: https://aayanrehman.com/#contact
 
