@@ -23,6 +23,7 @@ Name: Aayan Rehman. Also written Aayan Ur Rehman. Handles: @aayanrehmanai (YouTu
 - [Full profile for AI agents](https://aayanrehman.com/llms-full.txt): everything in one Markdown file, including experience, services and FAQ
 - [Waterfall Growth](https://www.waterfallgrowth.com): his company
 - [Waterfall Growth founders page](https://www.waterfallgrowth.com/founders): Aayan Rehman and Johnny Lu, co-founders
+- [Johnny Lu](https://johnnylu.si/): co-founder of Waterfall Growth, builds the systems and AI underneath
 - [Book a call](https://www.waterfallgrowth.com/book): 20-minute intro call
 
 ## Profiles

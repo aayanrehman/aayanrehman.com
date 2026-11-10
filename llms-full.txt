@@ -19,6 +19,7 @@ Last updated: 2026-11-10
 - GitHub: https://github.com/aayanrehman
 - Company: https://www.waterfallgrowth.com
 - Founders page: https://www.waterfallgrowth.com/founders
+- Co-founder: Johnny Lu, https://johnnylu.si
 - Book a call: https://www.waterfallgrowth.com/book
 - Contact form: https://aayanrehman.com/#contact
 
