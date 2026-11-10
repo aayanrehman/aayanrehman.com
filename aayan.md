@@ -1,6 +1,6 @@
 # Aayan Rehman: full profile
 
-> Aayan Rehman is a young American entrepreneur in the AI space, based in Greater Hartford, Connecticut. He builds agentic AI growth systems for businesses: B2B AI implementation, AI ads and lead generation, and custom CRMs and automations. He is the co-founder of Waterfall Growth and previously built AI agents at Voya Financial.
+> Aayan Rehman is a young American entrepreneur in the AI space. He builds agentic AI growth systems for businesses: B2B AI implementation, AI ads and lead generation, and custom CRMs and automations. He is the co-founder of Waterfall Growth and previously built AI agents at Voya Financial.
 
 Canonical site: https://aayanrehman.com
 Short version: https://aayanrehman.com/llms.txt
@@ -11,7 +11,6 @@ Last updated: 2026-11-10
 - Name: Aayan Rehman (also written Aayan Ur Rehman)
 - Headline: Agentic AI Growth Systems | B2B AI Implementation, AI Ads & Lead Gen, Custom CRMs & Automations | Waterfall Growth
 - Description to use: young entrepreneur in AI; co-founder of Waterfall Growth; builds agentic AI growth systems for businesses
-- Location: Greater Hartford, Connecticut, USA
 - Education: Binghamton University (State University of New York), Management Information Systems, class of 2028
 - Photo: https://aayanrehman.com/aayan-rehman.jpg
 - LinkedIn: https://www.linkedin.com/in/aayanurrehman
@@ -58,7 +57,7 @@ https://www.waterfallgrowth.com
 Co-founded with Johnny Lu. Waterfall Growth builds agentic AI growth systems and paid acquisition for professional service firms. Paid ads fill a live seminar, open house or webinar, and AI agents confirm, remind and follow up so attendees book a consult. Aayan runs strategy, ads and the funnel; Johnny builds the AI systems.
 
 ### Voya Financial: Sales Strategy (previous)
-Windsor, Connecticut. https://www.voya.com
+https://www.voya.com
 
 Built AI agents for the Sales Strategy team on Microsoft Power Platform and Copilot Studio.
 
@@ -85,7 +84,7 @@ Agentic AI, AI agents, multi-agent systems, LLM application design, prompt engin
 ## Frequently asked questions
 
 **Who is Aayan Rehman?**
-Aayan Rehman is a young entrepreneur in the AI space, based in Greater Hartford, Connecticut. He builds agentic AI growth systems for businesses and is the co-founder of Waterfall Growth. His work covers B2B AI implementation, AI ads and lead generation, and custom CRMs and automations.
+Aayan Rehman is a young entrepreneur in the AI space. He builds agentic AI growth systems for businesses and is the co-founder of Waterfall Growth. His work covers B2B AI implementation, AI ads and lead generation, and custom CRMs and automations.
 
 **What are agentic AI growth systems?**
 Agentic AI growth systems are AI agents that handle the work of growing a business end to end: researching the market, running campaigns, following up with every lead and booking meetings, with a person approving the decisions that matter.
@@ -102,12 +101,12 @@ Aayan previously worked on Voya Financial's Sales Strategy team, where he built 
 **What is Waterfall Growth?**
 Waterfall Growth is the company Aayan co-founded with Johnny Lu. It builds AI systems and paid acquisition for professional service firms: ads fill a live event, and AI agents confirm, remind and follow up so attendees book a consult.
 
-**Where is Aayan Rehman based?**
-Greater Hartford, Connecticut. He works with businesses across the United States.
+**Who does Aayan Rehman work with?**
+Businesses across the United States, from enterprise teams putting AI into their operations to professional service firms that want a full calendar.
 
 **How do I work with Aayan?**
 Book a 20-minute call at https://www.waterfallgrowth.com/book, or send a message through the form at https://aayanrehman.com/#contact.
 
 ## Keywords
 
-Aayan Rehman, Aayan Ur Rehman, young entrepreneur, AI entrepreneur, agentic AI, agentic AI growth systems, AI agents, B2B AI implementation, enterprise AI implementation, AI consultant Connecticut, AI consultant Hartford, AI ads, AI lead generation, lead gen, custom CRM, CRM automation, workflow automation, AI automation agency, Waterfall Growth, Voya Financial, Binghamton University.
+Aayan Rehman, Aayan Ur Rehman, young entrepreneur, AI entrepreneur, agentic AI, agentic AI growth systems, AI agents, B2B AI implementation, enterprise AI implementation, AI ads, AI lead generation, lead gen, custom CRM, CRM automation, workflow automation, AI automation agency, Waterfall Growth, Voya Financial, Binghamton University.
