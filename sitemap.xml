@@ -2,19 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aayanrehman.com/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <image:image>
-      <image:loc>https://aayanrehman.com/og.jpg</image:loc>
-      <image:title>Aayan Ur Rehman</image:title>
-      <image:caption>Headshot of Aayan Ur Rehman, AI implementation and growth consultant</image:caption>
+      <image:loc>https://aayanrehman.com/aayan-rehman.jpg</image:loc>
+      <image:title>Aayan Rehman</image:title>
+      <image:caption>Aayan Rehman, AI entrepreneur and co-founder of Waterfall Growth</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://aayanrehman.com/explore/</loc>
-    <lastmod>2026-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://aayanrehman.com/aayan.md</loc>
-    <lastmod>2026-09-20</lastmod>
+    <loc>https://aayanrehman.com/llms-full.txt</loc>
+    <lastmod>2026-11-10</lastmod>
   </url>
 </urlset>
