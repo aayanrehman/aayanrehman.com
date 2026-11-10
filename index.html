@@ -41,7 +41,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Hanken+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="/aayan-rehman.jpg">
+<link rel="preload" as="image" type="image/webp" imagesrcset="/aayan-rehman-480.webp 480w, /aayan-rehman-960.webp 960w" imagesizes="(min-width:1000px) 460px, min(420px, 92vw)">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -384,10 +384,7 @@
    ]
   },
   {
-   "@type": [
-    "Organization",
-    "ProfessionalService"
-   ],
+   "@type": "Organization",
    "@id": "https://aayanrehman.com/#waterfallgrowth",
    "name": "Waterfall Growth",
    "alternateName": "WaterfallGrowth",
@@ -632,9 +629,9 @@ footer a:hover{color:var(--foam)}
 .social svg{width:17px;height:17px;fill:var(--foam)}
 
 @media (prefers-reduced-motion:no-preference){
-  .hero h1 span,.frame,.intro{animation:rise 1s var(--ease) both}
-  .hero h1 .ln2{animation-delay:.08s}.intro{animation-delay:.18s}.frame{animation-delay:.26s}
-  @keyframes rise{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}
+  .hero h1 span,.intro{animation:rise 1s var(--ease) both}
+  .hero h1 .ln2{animation-delay:.08s}.intro{animation-delay:.18s}
+  @keyframes rise{from{translate:0 18px}to{translate:0 0}}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -661,7 +658,7 @@ footer a:hover{color:var(--foam)}
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="bar glass">
-  <a class="mark" href="#top" aria-label="Aayan Rehman, back to top"><img src="/headshot.jpg" alt="" width="32" height="32"><span>Aayan Rehman</span></a>
+  <a class="mark" href="#top" aria-label="Aayan Rehman, back to top"><img src="/avatar-64.jpg" alt="" width="32" height="32"><span>Aayan Rehman</span></a>
   <nav aria-label="Sections">
     <a href="#build">What I build</a>
     <a href="#record">Track record</a>
@@ -686,7 +683,7 @@ footer a:hover{color:var(--foam)}
       </div>
     </div>
     <figure class="frame">
-      <img src="/aayan-rehman.jpg" alt="Aayan Rehman, AI entrepreneur and co-founder of Waterfall Growth" width="1200" height="1200" fetchpriority="high">
+      <picture><source type="image/webp" srcset="/aayan-rehman-480.webp 480w, /aayan-rehman-960.webp 960w" sizes="(min-width:1000px) 460px, min(420px, 92vw)"><img src="/aayan-rehman.jpg" alt="Aayan Rehman, AI entrepreneur and co-founder of Waterfall Growth" width="1200" height="1200" fetchpriority="high"></picture>
       <figcaption><span>Aayan Rehman</span><span>Agentic AI growth systems</span></figcaption>
     </figure>
   </div>
