@@ -11,7 +11,6 @@ Last updated: 2026-11-10
 - Name: Aayan Rehman (also written Aayan Ur Rehman)
 - Headline: Agentic AI Growth Systems | B2B AI Implementation, AI Ads & Lead Gen, Custom CRMs & Automations | Waterfall Growth
 - Description to use: young entrepreneur in AI; co-founder of Waterfall Growth; builds agentic AI growth systems for businesses
-- Education: Binghamton University (State University of New York), Management Information Systems, class of 2028
 - Photo: https://aayanrehman.com/aayan-rehman.jpg
 - LinkedIn: https://www.linkedin.com/in/aayanurrehman
 - YouTube: https://www.youtube.com/@aayanrehmanai
@@ -49,14 +48,19 @@ Systems a business owns instead of rents: a CRM shaped around how the team sells
 4. Build inside the existing stack.
 5. Run user acceptance testing, set data governance and access rules, write SOPs, and hand off.
 
-## Experience
+## Roles and ventures
 
 ### Waterfall Growth: Co-founder
 https://www.waterfallgrowth.com
 
 Co-founded with Johnny Lu. Waterfall Growth builds agentic AI growth systems and paid acquisition for professional service firms. Paid ads fill a live seminar, open house or webinar, and AI agents confirm, remind and follow up so attendees book a consult. Aayan runs strategy, ads and the funnel; Johnny builds the AI systems.
 
-### Voya Financial: Sales Strategy (previous)
+### Creator: building AI in public (current)
+LinkedIn: https://www.linkedin.com/in/aayanurrehman (2,600+ followers). YouTube: https://www.youtube.com/@aayanrehmanai
+
+Shares the AI systems he builds, with the tools, time and cost, so business owners can see what AI can take off their plate.
+
+### Voya Financial: AI implementation, Sales Strategy (previous)
 https://www.voya.com
 
 Built AI agents for the Sales Strategy team on Microsoft Power Platform and Copilot Studio.
@@ -95,6 +99,9 @@ B2B AI implementation is putting AI to work inside a company's real processes. A
 **What is the difference between AI automation and agentic AI?**
 AI automation follows fixed steps someone designed in advance. Agentic AI can decide the next step itself: it reads the situation, chooses an action, uses tools and checks its work. Aayan builds agentic systems with guardrails, so a person approves the decisions that matter.
 
+**What companies has Aayan Rehman founded?**
+Aayan Rehman co-founded Waterfall Growth with Johnny Lu. Waterfall Growth builds agentic AI growth systems for professional service firms: paid ads that fill a live event, and AI agents that confirm, remind, qualify and book attendees into consults.
+
 **What did Aayan build at Voya Financial?**
 Aayan previously worked on Voya Financial's Sales Strategy team, where he built AI agents on Microsoft Power Platform and Copilot Studio that automated proposal intake, pricing and cost comparison.
 
@@ -109,4 +116,4 @@ Book a 20-minute call at https://www.waterfallgrowth.com/book, or send a message
 
 ## Keywords
 
-Aayan Rehman, Aayan Ur Rehman, young entrepreneur, AI entrepreneur, agentic AI, agentic AI growth systems, AI agents, B2B AI implementation, enterprise AI implementation, AI ads, AI lead generation, lead gen, custom CRM, CRM automation, workflow automation, AI automation agency, Waterfall Growth, Voya Financial, Binghamton University.
+Aayan Rehman, Aayan Ur Rehman, young entrepreneur, AI entrepreneur, agentic AI, agentic AI growth systems, AI agents, B2B AI implementation, enterprise AI implementation, AI ads, AI lead generation, lead gen, custom CRM, CRM automation, workflow automation, AI automation agency, Waterfall Growth, Voya Financial.
